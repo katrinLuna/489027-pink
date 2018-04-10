@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ekaterina Nikitina](https://up.htmlacademy.ru/adaptive/14/user/489027).
-* Наставник: `Неизвестно`.
+* Наставник: [Denis Bykov](https://htmlacademy.ru/profile/id66426).
 
 ---
 
