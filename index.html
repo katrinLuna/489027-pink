@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Пинк - приложение для жизни в розовом цвете</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="build/css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Ekaterina Nikitina">
+  <meta name="description" content="content">
+  <meta name="keyword" content="content">
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="" height="" alt="Логотип приложения Пинк">
+    </a>
+    <button class="mob-menu-toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+      <span class="visually-hidden">Закрыть меню</span>
+    </button>
+    <nav class="main-nav">
+        <ul class="main-nav__list site-menu-list">
+          <li class="site-menu-list__item site-menu-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-menu-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-menu-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-menu-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Приложение Пинк - оцени жизнь в розовом цвете, скажи нет серым будням.</h1>
+
+    <section class="download">
+      <h2 class="visually-hidden">Приложение Пинк - установите легко в любом магазине.</h2>
+      <img class="download__product-img" src="img/pink-mobile.jpeg" width="" height="" alt="Преобразить серые мир в цветные будни">
+      <a class="download__btn button--grey" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+      <ul class="download__list shop-list">
+        <li class="shop-list__item shop-list__item--apple">
+          <a href="https://www.apple.com/ru/ios/app-store/">
+            <span class="visually-hidden">Скачать приложение в магазине App Store</span>
+            <!--так и не решила контентные тут иконки или нет, поэтому добавила класс чтобы как bg их сделать-->
+          </a>
+        </li>
+        <li class="shop-list__item shop-list__item--google">
+          <a href="https://play.google.com/store/apps?hl=ru">
+            <span class="visually-hidden">Скачать приложение в магазине Google Play</span>
+          </a>
+        </li>
+        <li class="shop-list__item shop-list__item--win">
+          <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
+            <span class="visually-hidden">Скачать приложение в магазине Windows phone store</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества и бонусы приложения</h2>
+      <p class="advantage__slogan">Устали от серости мегаполиса?</p>
+      <p class="advantage__slogan">Нам есть, что вам предложить!</p>
+      <ul class="advantage__list"><!--не очень понимаю этот момент с вложенностью элементов в элемент, но li же в сущности будут как элементы для блока самого списка-->
+        <li class="advanteges__item">
+          <h3 class="advanteges__title">Поднимает настроение</h3>
+          <p class="advanteges__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+        </li>
+        <li class="advanteges__item">
+          <h3 class="advanteges__title">Меняет мир вокруг</h3>
+          <p class="advanteges__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="advanteges__item">
+          <h3 class="advanteges__title">Заводит новых друзей</h3>
+          <p class="advanteges__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+      <img class="advantages__img" src="img/smile.jpeg" width="" height="" alt="Привет от приложения Пинк">
+    </section>
+
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы об использовании приложения Пинк</h2>
+      <div class="reviews__wrapper slider">
+        <ul class="reviews__list slider__list">
+          <li class="reviewes__item slider__item">
+            <p class="reviews__person-name">Николай Петров</p>
+            <blockquote class="reviews__text">
+              <p></p>
+            </blockquote>
+          </li>
+          <li class="reviewes__item slider__item">
+            <p class="reviews__person-name"></p>
+            <blockquote class="reviews__text">
+              <p></p>
+            </blockquote>
+          </li>
+          <li class="reviewes__item slider__item">
+            <p class="reviews__person-name"></p>
+            <blockquote class="reviews__text">
+              <p></p>
+            </blockquote>
+          </li>
+        </ul>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+
+    <section class="">
+
+    </section>
+
+
+  </main>
+
+  <footer class="page-footer">
+
+  </footer>
+</body>
+</html>
