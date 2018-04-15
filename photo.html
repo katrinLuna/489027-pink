@@ -36,6 +36,154 @@
     </nav>
   </header>
 
-  <img class="" src="http://placehold.it/150x100" alt="" width="" height=""><!--вместо картинок идут заглушки-->
+  <main class="page-main">
+    <h1 class="page-main__title">Фотографии пользователей</h1>
+
+    <section class="user-photo">
+      <h2 class="user-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+
+      <ul class="user-photo__list">
+        <li class="user-photo__item user-photo__item--panoramic">
+          <a href="img/user-photo-full.jpeg">
+            <img class="user-photo__img" src="img/user-photo.jpeg" width="" height="" alt="Суперическая фотка от пользователя нашего приложения">
+          </a>
+          <blockquote>
+            <p class="user-photo__author">
+              Анна
+              <date class="user-photo__date">(5 минут назад)</date>
+            </p>
+            <p class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы</p>
+          </blockquote>
+          <p class="user-photo__like">нравится</p>
+        </li>
+        <li class="user-photo__item user-photo__item--panoramic">
+          <a href="img/user-photo-full.jpeg">
+            <img class="user-photo__img" src="img/user-photo.jpeg" width="" height="" alt="Суперическая фотка от пользователя нашего приложения">
+          </a>
+          <blockquote>
+            <p class="user-photo__author">
+              Левон
+              <date class="user-photo__date">(5 часов назад)</date>
+            </p>
+            <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нас попал.</p>
+          </blockquote>
+          <p class="user-photo__like">нравится:356</p>
+        </li>
+        <li class="user-photo__item user-photo__item--panoramic">
+          <a href="img/user-photo-full.jpeg">
+            <img class="user-photo__img" src="img/user-photo.jpeg" width="" height="" alt="Суперическая фотка от пользователя нашего приложения">
+          </a>
+          <blockquote>
+            <p class="user-photo__author">
+              Антон
+              <date class="user-photo__date">(12 часов назад)</date>
+            </p>
+            <p class="user-photo__text">Соседи будут рады!</p>
+          </blockquote>
+          <p class="user-photo__like">нравится: 666</p>
+        </li>
+        <li class="user-photo__item user-photo__item--panoramic">
+          <a href="img/user-photo-full.jpeg">
+            <img class="user-photo__img" src="img/user-photo.jpeg" width="" height="" alt="Суперическая фотка от пользователя нашего приложения">
+          </a>
+          <blockquote>
+            <p class="user-photo__author">
+              Борис
+              <date class="user-photo__date">(20 часов назад)</date>
+            </p>
+            <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          </blockquote>
+          <p class="user-photo__like">нравится: 215</p>
+        </li>
+        <li class="user-photo__item user-photo__item--panoramic">
+          <a href="img/user-photo-full.jpeg">
+            <img class="user-photo__img" src="img/user-photo.jpeg" width="" height="" alt="Суперическая фотка от пользователя нашего приложения">
+          </a>
+          <blockquote>
+            <p class="user-photo__author">
+              Сергей
+              <date class="user-photo__date">(25 часов назад)</date>
+            </p>
+            <p class="user-photo__text">Самая кубанская в мире!</p>
+          </blockquote>
+          <p class="user-photo__like">нравится: 4</p>
+        </li>
+        <li class="user-photo__item user-photo__item--panoramic">
+          <a href="img/user-photo-full.jpeg">
+            <img class="user-photo__img" src="img/user-photo.jpeg" width="" height="" alt="Суперическая фотка от пользователя нашего приложения">
+          </a>
+          <blockquote>
+            <p class="user-photo__author">
+              Максим
+              <date class="user-photo__date">(40 часов назад)</date>
+            </p>
+            <p class="user-photo__text">Где снег-то?</p>
+          </blockquote>
+          <p class="user-photo__like">нравится: 150</p>
+        </li>
+        <li class="user-photo__item user-photo__item--panoramic">
+          <a href="img/user-photo-full.jpeg">
+            <img class="user-photo__img" src="img/user-photo.jpeg" width="" height="" alt="Суперическая фотка от пользователя нашего приложения">
+          </a>
+          <blockquote>
+            <p class="user-photo__author">
+              Надежда
+              <date class="user-photo__date">(45 часов назад)</date>
+            </p>
+            <p class="user-photo__text">Всем GM и взаимные лайки!</p>
+          </blockquote>
+          <p class="user-photo__like">нравится: 2560</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="photo-editor">
+      <h2 class="photo-editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне</h2>
+
+      <form class="photo-editor__picture-edit editing-pic" action="https://echo.htmlacademy.ru" method="post">
+          <img class="editing-pic__img" src="img/myne-photo.jpeg" width="" height="" alt="Запилите свой бомбический фотошодевр!">
+          <ul class="editing-pic__list-tools">
+            <li class="editing-pic__item editing-pic__item--crop">
+              <input type="range" name="crop">
+            </li>
+            <li class="editing-pic__item editing-pic__item--color">
+              <input type="range" name="color">
+            </li>
+            <li class="editing-pic__item editing-pic__item--light">
+              <input type="range" name="light">
+            </li>
+          </ul>
+        <div class="editing-pic__btn-wrapper">
+          <button class="editing-pic__btn photo-editor__btn--submit" type="submit">Запостить</button>
+          <button class="editing-pic__btn photo-editor__btn--reset" type="reset">Очистить</button>
+        </div>
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="index.html">
+      <img class="page-footer__logo-image" src="img/logotype-full-mobile.svg" width="" height="" alt="Логотип приложения Пинк">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Группа Пинк в Твиттер</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Группа Пинк в Фейсбуке</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademyru"><span class="visually-hidden">Группа Пинк в Youtube</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+    </div>
+  </footer>
 </body>
 </html>
