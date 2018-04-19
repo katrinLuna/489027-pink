@@ -45,20 +45,22 @@
       <img class="download__product-img" src="img/pink-mobile.jpeg" width="" height="" alt="Преобразить серые мир в цветные будни">
       <a class="download__btn button--grey" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
       <ul class="download__list shop-list">
-        <li class="shop-list__item shop-list__item--apple">
-          <a href="https://www.apple.com/ru/ios/app-store/">
+        <li class="shop-list__item">
+          <a class="shop-list__link" href="https://www.apple.com/ru/ios/app-store/">
             <span class="visually-hidden">Скачать приложение в магазине App Store</span>
-            <!--так и не решила контентные тут иконки или нет, поэтому добавила класс чтобы как bg их сделать-->
+            <img class="shop-list__img shop-list__img--apple" src="img/icon-apple.png" width="" height="" alt="Скачать приложение в магазине App Store">
           </a>
         </li>
-        <li class="shop-list__item shop-list__item--google">
-          <a href="https://play.google.com/store/apps?hl=ru">
+        <li class="shop-list__item">
+          <a class="shop-list__link" href="https://play.google.com/store/apps?hl=ru">
             <span class="visually-hidden">Скачать приложение в магазине Google Play</span>
+            <img class="shop-list__img shop-list__img--google" src="img/icon-google.png" width="" height="" alt="Скачать приложение в магазине Google Play">
           </a>
         </li>
-        <li class="shop-list__item shop-list__item--win">
-          <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
+        <li class="shop-list__item">
+          <a class="shop-list__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
             <span class="visually-hidden">Скачать приложение в магазине Windows phone store</span>
+            <img class="shop-list__img shop-list__img--win" src="img/icon-windows.png" width="" height="" alt="Скачать приложение в магазине Windows phone store">
           </a>
         </li>
       </ul>
@@ -71,7 +73,7 @@
       <h2 class="visually-hidden">Преимущества и бонусы приложения</h2>
       <p class="advantage__slogan">Устали от серости мегаполиса?</p>
       <p class="advantage__slogan">Нам есть, что вам предложить!</p>
-      <ul class="advantage__list"><!--не очень понимаю этот момент с вложенностью элементов в элемент, но li же в сущности будут как элементы для блока самого списка-->
+      <ul class="advantage__list"><!--Пока оставлю как есть, опять же посмотрю по ходу стилизации как будет удобнее: оставить элементом самого родительского (advanteges__item) или внутренний ul тоже в блок превратить и li разметить его детишками-->
         <li class="advanteges__item">
           <h3 class="advanteges__title">Поднимает настроение</h3>
           <p class="advanteges__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
@@ -90,71 +92,92 @@
 
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы об использовании приложения Пинк</h2>
-      <div class="reviews__wrapper slider">
-        <ul class="reviews__list slider__list">
-          <li class="reviewes__item slider__item">
+      <div class="reviews__wrapper slider-switch">
+        <ul class="reviews__list slider-switch__list">
+          <li class="reviewes__item slider-switch__item">
             <blockquote>
-              <p class="reviews__person-name">Николай Петров</p>
+              <cite class="reviews__person-name">Николай Петров</cite>
               <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-настоящему взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
             </blockquote>
           </li>
-          <li class="reviewes__item slider__item">
+          <li class="reviewes__item slider-switch__item">
             <blockquote>
               <p class="reviews__person-name"></p>
               <p class="reviews__text"></p>
             </blockquote>
           </li>
-          <li class="reviewes__item slider__item">
+          <li class="reviewes__item slider-switch__item">
             <blockquote>
               <p class="reviews__person-name"></p>
               <p class="reviews__text"></p>
             </blockquote>
           </li>
         </ul>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <p class="reviews__toggles slider-switch__toggles">
+          <button class="slider-switch__toggle" type="button">1</button>
+          <button class="slider-switch__toggle" type="button">2</button>
+          <button class="slider-switch__toggle" type="button">3</button>
         </p>
       </div>
     </section>
 
     <section class="pricing">
       <h2 class="visually-hidden">Тарифные планы приложения Пинк</h2>
-      <div class="pricing__wrapper slider">
+      <div class="pricing__wrapper slider-movement">
         <table class="pricing__list">
           <th class="pricing__title">
-            База
+            <span class="pricing__hit">хит</span>
+            <p class="pricing__name">База</p>
             <span class="pricing__value">1,99 USD</span>
           </th>
-          <th class="pricing__title pricing__title--hit">
-            Стандарт
+          <th class="pricing__title">
+            <span class="pricing__hit">хит</span>
+            <p class="pricing__name">Стандарт</p>
             <span class="pricing__value">3,99 USD</span>
           </th>
           <th class="pricing__title">
-            Анлим
+            <span class="pricing__hit">хит</span>
+            <p class="pricing__name">Анлим</p>
             <span class="pricing__value">9,99 USD</span>
           </th>
           <tr>
-            <td class="pricing__inclided">розовый фильтр</td>
-            <td class="pricing__inclided">розовый фильтр</td>
-            <td class="pricing__inclided">розовый фильтр</td>
+            <td class="pricing__inclided">розовый фильтр
+              <img class="pricing__checked" src="img/" width="" height="" alt="">
+            </td>
+            <td class="pricing__inclided">розовый фильтр
+              <img class="pricing__checked" src="img/" width="" height="" alt="">
+            </td>
+            <td class="pricing__inclided">розовый фильтр
+              <img class="pricing__checked" src="img/" width="" height="" alt="">
+            </td>
           </tr>
           <tr>
-            <td class="pricing__inclided pricing__inclided--not">смайлики</td>
-            <td class="pricing__inclided">смайлики</td>
-            <td class="pricing__inclided">смайлики</td>
+            <td class="pricing__inclided">смайлики
+              <img class="pricing__checked pricing__checked--not" src="img/" width="" height="" alt="">
+            </td>
+            <td class="pricing__inclided">смайлики
+              <img class="pricing__checked" src="img/" width="" height="" alt="">
+            </td>
+            <td class="pricing__inclided">смайлики
+              <img class="pricing__checked" src="img/" width="" height="" alt="">
+            </td>
           </tr>
           <tr>
-            <td class="pricing__inclided pricing__inclided--not">комментарии</td>
-            <td class="pricing__inclided pricing__inclided--not">комментарии</td>
-            <td class="pricing__inclided">комментарии</td>
+            <td class="pricing__inclided">комментарии
+              <img class="pricing__checked pricing__checked--not" src="img/" width="" height="" alt="">
+            </td>
+            <td class="pricing__inclided">комментарии
+              <img class="pricing__checked pricing__checked--not" src="img/" width="" height="" alt="">
+            </td>
+            <td class="pricing__inclided">комментарии
+              <img class="pricing__checked" src="img/" width="" height="" alt="">
+            </td>
           </tr>
         </table><!--или иконки надо кратинками именно вставить?-->
-        <p class="pricing__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <p class="pricing__toggles slider-movement__toggles">
+          <button class="slider-movement__toggle" type="button">1</button>
+          <button class="slider-movement__toggle" type="button">2</button>
+          <button class="slider-movement__toggle" type="button">3</button>
         </p>
       </div>
     </section>
