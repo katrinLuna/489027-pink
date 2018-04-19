@@ -45,7 +45,7 @@
       <ul class="user-photo__list">
         <li class="user-photo__item user-photo__item--panoramic photo-item">
           <a href="img/user-photo-full.jpeg">
-            <img class="photo-item__img" src="img/user-photo.jpeg" width="" height="" alt="Суперическая фотка от пользователя нашего приложения">
+            <img class="photo-item__img photo-item__img--panoramic" src="img/user-photo.jpeg" width="" height="" alt="Суперическая фотка от пользователя нашего приложения">
           </a>
           <blockquote>
             <cite class="photo-item__author">Анна</cite>
@@ -143,14 +143,35 @@
       <form class="photo-editor__picture-edit editing-picture" action="https://echo.htmlacademy.ru" method="get">
           <img class="editing-picture__img" src="img/myne-photo.jpeg" width="" height="" alt="Запилите свой бомбический фотошодевр!">
           <ul class="editing-picture__list-tools">
-            <li class="editing-picture__item editing-pic__item--crop">
-              <input type="range" name="crop">
+            <li class="editing-picture__item editing-picture__item--crop">
+              <label class="editing-picture__title-checkbox" for="crop-tool">
+                <img class="editing-picture__tool-icon" src="img/" width="" height="" alt="Инструмент обработки фотографии: обрезка заваленного горизонта">
+              </label>
+              <input class="editing-picture__field-checkbox" id="crop-tool" type="checkbox" name="crop-tool">
+              <div class="editing-picture__range-conteiner">
+                <div class="editing-picture__range-line"></div>
+                <div class="editing-picture__range-point"></div>
+              </div>
             </li>
-            <li class="editing-picture__item editing-pic__item--color">
-              <input type="range" name="color">
+            <li class="editing-picture__item editing-picture__item--color">
+              <label class="editing-picture__title-checkbox" for="color-tool">
+                <img class="editing-picture__tool-icon" src="img/" width="" height="" alt="Инструмент обработки фотографии: вытянуть цвет">
+              </label>
+              <input class="editing-picture__field-checkbox" id="color-tool" type="checkbox" name="color-tool">
+              <div class="editing-picture__range-conteiner">
+                <div class="editing-picture__range-line"></div>
+                <div class="editing-picture__range-point"></div>
+              </div>
             </li>
-            <li class="editing-picture__item editing-pic__item--light">
-              <input type="range" name="light">
+            <li class="editing-picture__item editing-picture__item--light">
+              <label class="editing-picture__title-checkbox" for="light-tool">
+                <img class="editing-picture__tool-icon" src="img/" width="" height="" alt="Инструмент обработки фотографии: яркость">
+              </label>
+              <input class="editing-picture__field-checkbox" id="light-tool" type="checkbox" name="light-tool">
+              <div class="editing-picture__range-conteiner">
+                <div class="editing-picture__range-line"></div>
+                <div class="editing-picture__range-point"></div>
+              </div>
             </li>
           </ul>
         <div class="editing-picture__btn-wrapper">
