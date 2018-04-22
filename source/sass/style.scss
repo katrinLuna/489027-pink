@@ -1,5 +1,16 @@
-body { background: pink;}
+@import 'normalize';
+@import 'fonts';
+@import 'variables';
+@import 'visually-hidden';
 
-$icon: #f00;
 
-h1{ color: $icon;}
+@import 'page-header';
+
+body {
+  width: 320px;
+margin: 0 auto;
+outline: 1px solid $outline-color;
+font-family: "Open Sans", "Arial", sans-serif;}
+
+
+
