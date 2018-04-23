@@ -2,15 +2,24 @@
 @import 'fonts';
 @import 'variables';
 @import 'visually-hidden';
-
-
-@import 'page-header';
+@import 'mixins';
 
 body {
   width: 320px;
-margin: 0 auto;
-outline: 1px solid $outline-color;
-font-family: "Open Sans", "Arial", sans-serif;}
+  margin: 0 auto;
+  font-family: $font, "Arial", sans-serif;
+  font-weight: 400;
+  outline: 1px solid red;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@import './blocks/page-header';
+@import './blocks/download';
+
 
 
 

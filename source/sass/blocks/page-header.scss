@@ -1,0 +1,50 @@
+.page-header {
+  width: 100%;
+  padding-top: 20px;
+  color: $white;
+  background-color: $corp-blue;
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mob-menu-toggle {
+  width: 25px;
+  height: 25px;
+  background-color: $corp-blue;
+  background-image: url(../img/icon-menu-cross.svg);
+  @include solid-bg;
+  border: none;
+}
+
+.main-nav{
+  margin-top: 22px;
+  border-top: 1px solid #000000;
+}
+
+.main-nav__list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0;
+}
+
+.site-menu-list__item {
+  padding: 17px 0;
+  text-align: center;
+  list-style-type: none;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+.site-menu-list__link {
+  font-weight: $font-bold;
+  line-height: 28px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+

@@ -1,0 +1,25 @@
+.download {
+  background-color: $corp-blue;
+}
+
+.download__product-img-wrapper {
+  height: 286px;
+  padding-top: 110px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  @include solid-bg;
+}
+
+.download__btn {
+  display: block;
+  width: 280px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+  font-weight: $font-bold;
+  text-align: center;
+  border: 3px solid $white;
+  border-radius: 30px;
+}
