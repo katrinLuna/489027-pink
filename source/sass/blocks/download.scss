@@ -9,6 +9,13 @@
   @include solid-bg;
 }
 
+.download__btn-wrapper {
+  width: 100%;
+  padding: 28px 20px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .download__btn {
   display: block;
   width: 280px;
@@ -19,7 +26,37 @@
   line-height: 18px;
   color: $white;
   font-weight: $font-bold;
+  text-decoration: none;
   text-align: center;
   border: 3px solid $white;
   border-radius: 30px;
+
+    &:hover,
+    &:focus {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      color: $corp-pink;
+      background-color: $white;
+      border: none;
+    }
+
+    &:active {
+      color: rgba($corp-pink_rgb, 0.3);
+    }
+}
+
+.download__list {
+  margin-top: 32px;
+  margin-bottom: 28px;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.shop-list {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
 }
