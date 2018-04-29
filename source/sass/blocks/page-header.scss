@@ -41,8 +41,8 @@
 }
 
 .site-menu-list__link {
+  @include set-font(18px, 28px);
   font-weight: $font-bold;
-  line-height: 28px;
   color: $white;
   text-transform: uppercase;
   text-decoration: none;

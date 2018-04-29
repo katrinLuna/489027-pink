@@ -3,3 +3,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@mixin set-font($font-size, $line-height: $line) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
