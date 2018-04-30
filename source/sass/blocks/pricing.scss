@@ -1,0 +1,88 @@
+.pricing {
+  padding-top: 104px;
+  background-image: linear-gradient(176deg, #ffffff 40px, #f2f2f2 40px);
+  overflow: hidden;
+}
+
+.pricing__list {
+  width: 276px * 3;
+  transform: translateX(-254px);
+  border: 1px solid #e5e5e5;
+}
+
+.pricing__title,
+.pricing__inclided {
+  position: relative;
+  width: 276px;
+  border: 1px solid #e5e5e5;
+}
+
+.pricing__title {
+  padding-bottom: 21px;
+  background-color: $corp-blue;
+  color: $white;
+  text-align: center;
+}
+
+.pricing__hit {
+  display: none;
+}
+
+.pricing__hit--active{
+  position: absolute;
+  top: 0;
+  left: -3px;
+  display: block;
+  width: 74px;
+  height: 73px;
+  margin: 0;
+  background-image: url('../img/bg-hit.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+.pricing__hit-text-rotate {
+  display: block;
+  @include set-font(14px, 30px);
+  font-weight: 600;
+  margin-top: 12px;
+  margin-left: -27px;
+  transform: rotate(-45deg);
+}
+
+.pricing__name {
+  margin-top: 18px;
+  margin-bottom: 1px;
+  @include set-font(18px, 30px);
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
+
+.pricing__value {
+  @include set-font(24px, 30px);
+  font-weight: $font-light;
+}
+
+.pricing__inclided {
+  padding: 15px 18px 14px 20px;
+  background-color: $white;
+}
+.pricing__inclided-flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing__included-text {
+  @include set-font(14px, 30px);
+  font-weight: 400;
+  color: $corp-blue;
+  text-transform: uppercase;
+}
+
+.pricing__toggles {
+  height: 10px;
+  margin-top: 40px;
+  margin-bottom: 48px;
+  text-align: center;
+}
