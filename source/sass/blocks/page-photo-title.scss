@@ -1,0 +1,18 @@
+.page-photo-title {
+  width: 100%;
+  padding-top: 33px;
+  padding-bottom: 85px;
+  background-color: $corp-blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  @include set-bg (center, -67px);
+  text-align: center;
+}
+
+
+.page-photo-title__text {
+  width: 55%;
+  margin: 0 auto;
+  @include set-font (24px, 27px);
+  font-weight: $font-light;
+  color: $white;
+}

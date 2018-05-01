@@ -4,6 +4,13 @@
   background-size: cover;
 }
 
+@mixin set-bg ($bg-position-x, $bg-position-y) {
+  background-position-x: $bg-position-x;
+  background-position-y: $bg-position-y;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @mixin set-font($font-size, $line-height: $line) {
   font-size: $font-size;
   line-height: $line-height;

@@ -4,6 +4,7 @@
 @import "visually-hidden";
 @import "mixins";
 
+//common styles
 body {
   width: 320px;
   margin: 0 auto;
@@ -20,9 +21,9 @@ img {
 button {
   cursor: pointer;
 }
+@import "./blocks/page-header";
 
 //styles for index page
-@import "./blocks/page-header";
 @import "./blocks/download";
 @import "./blocks/shop-list";
 @import "./blocks/advantages";
@@ -30,5 +31,10 @@ button {
 @import "./blocks/pricing";
 @import "./blocks/contacts";
 
-
+//styles for index page
+@import "./blocks/page-photo-title";
+@import "./blocks/user-photo";
+@import "./blocks/photo-item";
+@import "./blocks/photo-editor";
+@import "./blocks/editing-picture";
 
