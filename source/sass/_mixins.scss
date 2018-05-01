@@ -1,7 +1,7 @@
-@mixin solid-bg () {
+@mixin solid-bg ($bg-size: cover) {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: $bg-size;
 }
 
 @mixin set-bg ($bg-position-x, $bg-position-y) {
