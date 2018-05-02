@@ -12,12 +12,15 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="" height="" alt="Логотип приложения Пинк">
-    </a>
-    <button class="mob-menu-toggle" type="button">
-      <span class="visually-hidden">Открыть/Закрыть меню</span>
-    </button>
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк">
+      </a>
+      <button class="page-header__mob-menu-toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+    </div>
     <nav class="main-nav">
         <ul class="main-nav__list site-menu-list">
           <li class="site-menu-list__item">
@@ -27,7 +30,7 @@
             <a class="site-menu-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-menu-list__item site-menu-list__item--active">
-            <a class="main-nav__link">Конкурс</a>
+            <a class="site-menu-list__link">Конкурс</a>
           </li>
           <li class="site-menu-list__item">
             <a class="site-menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
@@ -36,13 +39,17 @@
     </nav>
   </header>
 
-  <main class="page-main">
-    <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  <main class="page-main-form">
+    <div class="page-title">
+      <h1 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
 
     <section class="contest">
       <h2 class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</h2>
+
       <form class="contest__request form-list" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form-list__person">
+
+        <fieldset class="form-list__fieldset form-list__fieldset--person">
           <label class="form-list__title-field" for="lastname">фамилия</label>
           <input class="form-list__field" id="lastname" type="text" name="lastname" placeholder="Укажите фамилию *" required>
           <label class="form-list__title-field" for="name">имя</label>
@@ -51,8 +58,9 @@
           <input class="form-list__field" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
         </fieldset>
 
-        <fieldset class="form-list__adventure-list">
-          <legend class="form-list__caption">ваши безбашенные достижения в путешествии</legend>
+        <fieldset class="form-list__fieldset form-list__fieldset--adventure-list">
+
+          <legend class="form-list__caption">ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
           <ul class="form-list__ul-list">
             <li class="form-list__item">
               <input class="form-list__field-checkbox" id="shark" type="checkbox" name="shark" checked>
@@ -82,15 +90,15 @@
         </fieldset>
 
 
-        <fieldset class="form-list__contact">
+        <fieldset class="form-list__fieldset form-list__fieldset--contact">
           <label class="form-list__title-field" for="mobile-num">номер телефона</label>
           <input class="form-list__field" id="mobile-num" type="tel" name="mobile-num" placeholder="Номер, пожалуйста">
           <label class="form-list__title-field" for="email">адрес почты</label>
           <input class="form-list__field" id="email" type="email" name="email" placeholder="Введите почту *"  required>
         </fieldset>
 
-        <fieldset class="form-list__apps-list">
-          <legend class="form-list__caption">с какими приложениями путешествовали?</legend>
+        <fieldset class="form-list__fieldset form-list__fieldset--apps-list">
+          <legend class="form-list__caption">с каким приложением путешествовали?</legend>
           <ul class="form-list__ul-list">
             <li class="form-list__item">
               <input class="form-list__field-radio" id="ios" type="radio" name="apps-chose" value="ios" checked>
@@ -107,7 +115,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form-list__freeform">
+        <fieldset class="form-list__fieldset form-list__fieldset--freeform">
           <legend class="form-list__caption">опишите свои эмоции</legend>
           <textarea class="form-list__textarea" name="freeform-text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="4"></textarea>
         </fieldset>

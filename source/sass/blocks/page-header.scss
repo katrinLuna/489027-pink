@@ -12,7 +12,7 @@
   padding-right: 20px;
 }
 
-.mob-menu-toggle {
+.page-header__mob-menu-toggle {
   width: 25px;
   height: 25px;
   background-color: $corp-blue;
@@ -20,31 +20,3 @@
   @include solid-bg;
   border: none;
 }
-
-.main-nav{
-  margin-top: 22px;
-  border-top: 1px solid #000000;
-}
-
-.main-nav__list {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0;
-}
-
-.site-menu-list__item {
-  padding: 17px 0;
-  text-align: center;
-  list-style-type: none;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid #000000;
-}
-
-.site-menu-list__link {
-  @include set-font(18px, 28px);
-  font-weight: $font-bold;
-  color: $white;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-

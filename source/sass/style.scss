@@ -22,6 +22,9 @@ button {
   cursor: pointer;
 }
 @import "./blocks/page-header";
+@import "./blocks/main-nav";
+@import "./blocks/site-menu-list";
+@import "./blocks/page-title";
 
 //styles for index page
 @import "./blocks/download";
@@ -32,11 +35,12 @@ button {
 @import "./blocks/contacts";
 
 //styles for photo page
-@import "./blocks/page-photo-title";
 @import "./blocks/user-photo";
 @import "./blocks/photo-item";
 @import "./blocks/photo-editor";
 @import "./blocks/editing-picture";
 @import "./blocks/page-footer";
 
-
+//styles for contest-form page
+@import "./blocks/contest";
+@import "./blocks/form-list";

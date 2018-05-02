@@ -1,0 +1,10 @@
+.contest__title {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 37px;
+  @include set-font (14px,30px);
+  color: $corp-blue;
+  font-weight: 400;
+  text-align: center;
+}
