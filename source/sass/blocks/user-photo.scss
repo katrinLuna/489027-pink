@@ -7,13 +7,30 @@
   margin: 0 auto;
   padding-top: 45px;
   padding-bottom: 50px;
-  @include set-font (14px,30px);
+  @include set-font (14px, 30px);
   color: $corp-blue;
   text-align: center;
 }
 
 .user-photo__img-panoramic-wrapper {
+  position: relative;
   width: 100%;
+
+  &::before {
+    content: 'панорама дня';
+    position: absolute;
+    top: 0;
+    right: 6%;
+    width: 140px;
+    height: 31px;
+    padding-top: 6px;
+    @include set-font (12px, 24px);
+    color: $white;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    background-color: $corp-pink;
+    text-align: center;
+  }
 }
 
 .user-photo__list {

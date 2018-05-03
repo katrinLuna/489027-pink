@@ -1,6 +1,6 @@
 .pricing {
   padding-top: 104px;
-  background-image: linear-gradient(176deg, #ffffff 40px, #f2f2f2 40px);
+  background-image: linear-gradient(176deg, $white 40px, $grey 40px);
   overflow: hidden;
 }
 
@@ -28,7 +28,7 @@
   display: none;
 }
 
-.pricing__hit--active{
+.pricing__hit--active {
   position: absolute;
   top: 0;
   left: -3px;
@@ -39,7 +39,7 @@
   background-image: url('../img/bg-hit.svg');
   background-repeat: no-repeat;
   background-size: cover;
- }
+}
 
 .pricing__hit-text-rotate {
   display: block;
