@@ -1,0 +1,219 @@
+.form-list__fieldset {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: none;
+
+  &--adventure-list {
+    margin-top: -50px;
+    background-color: $grey;
+  }
+
+  &--apps-list {
+    margin-top: -50px;
+    background-color: $grey;
+  }
+
+  &--freeform {
+    margin-top: -73px;
+  }
+
+  &--contact {
+      padding-top: 29px;
+  }
+}
+
+.form-list__title-field {
+  display: block;
+  padding-left: 23px;
+  padding-bottom: 4px;
+  @include set-font (14px, 30px);
+  color: $corp-pink;
+  text-transform: uppercase;
+}
+
+.form-list__field {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 15px 23px;
+  box-sizing: border-box;
+  @include set-font (18px, 30px);
+  color: $corp-blue;
+  border: 2px solid #e5e5e5;
+
+  &:hover,
+  &:focus {
+    border-color: $corp-blue;
+  }
+
+  &:active {
+    border-color: $corp-pink;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $corp-blue;
+  }
+}
+
+.form-list__caption {
+  text-align: center;
+  @include set-font (14px, 18px);
+  color: $corp-pink;
+  text-transform: uppercase;
+
+  &:before {
+    content:'';
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin-bottom: 112px;
+  }
+}
+
+.form-list__ul-list {
+  margin-top: 39px;
+  margin-bottom: 0px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.form-list__item {
+  margin-bottom: 42px;
+
+  &--radio {
+    margin-bottom: 35px;
+  }
+}
+
+.form-list__title-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  @include set-font (18px, 30px);
+  color: $corp-blue;
+
+  &::before {
+    content: '';
+    margin-right: 31px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $corp-blue;
+  }
+
+  &:active::before {
+    border-color: $corp-pink;
+  }
+}
+
+.form-list__field-checkbox:checked + .form-list__title-checkbox::before {
+  background-color: $white;
+  background-image: url('../img/icon-yes.svg');
+  @include solid-bg(auto);
+}
+
+.form-list__title-radio {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  @include set-font (18px, 30px);
+  color: $corp-blue;
+
+  &::before {
+    content: '';
+    margin-right: 31px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $corp-blue;
+  }
+
+  &:active::before {
+    border-color: $corp-pink;
+  }
+
+}
+
+.form-list__field-radio:checked + .form-list__title-radio::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background-color: $corp-pink;
+  border-radius: 50%;
+}
+
+.form-list__textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 18px;
+  padding-top: 14px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  @include set-font (18px, 30px);
+  color: $corp-blue;
+  border: 2px solid #e5e5e5;
+}
+
+.form-list__button {
+  width: 100%;
+  margin-top: 43px;
+  margin-bottom: 35px;
+}
+
+.form-list__btn-submit {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  box-sizing: border-box;
+  @include set-font (18px, 30px);
+  color: $white;
+  font-weight: $font-bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+.form-list__description {
+  width: 100%;
+  padding-bottom: 15px;
+  text-align: center;
+  @include set-font (14px, 30px);
+  color: $corp-blue;
+  text-transform: uppercase;
+}
+
+.form-list__description-star {
+  color: $corp-pink;
+}

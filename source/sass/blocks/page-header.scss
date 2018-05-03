@@ -1,0 +1,22 @@
+.page-header {
+  width: 100%;
+  padding-top: 20px;
+  color: $white;
+  background-color: $corp-blue;
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-header__mob-menu-toggle {
+  width: 25px;
+  height: 25px;
+  background-color: $corp-blue;
+  background-image: url(../img/icon-menu-cross.svg);
+  @include solid-bg;
+  border: none;
+}

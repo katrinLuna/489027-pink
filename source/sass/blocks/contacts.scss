@@ -1,0 +1,84 @@
+.contacts {
+  padding-top: 46px;
+  text-align: center;
+  background-color: $white;
+}
+
+
+.contacts__header {
+  margin-top: 0;
+  margin-bottom: 38px;
+  @include set-font(24px, 28px);
+  font-weight: $font-light;
+  color: $corp-blue;
+}
+
+.contacts__item {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 27px;
+}
+
+.contacts__title {
+  display: block;
+  margin-bottom: 7px;
+  @include set-font(18px, 18px);
+  font-weight: $font-bold;
+  color: $corp-blue;
+}
+
+.contacts__detail {
+  display: block;
+  @include set-font(24px, 26px);
+  font-weight: $font-light;
+  color: $corp-pink;
+}
+
+.contacts__detail--link {
+  text-decoration: none;
+}
+
+.contacts__detail--link-mail {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+  color: $corp-blue;
+  text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__img-map {
+  position: relative;
+  height: 200px;
+  background-image: url('../img/bg-map-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 40px;
+    background-image: linear-gradient(to bottom left, #ffffff 50%, transparent 50%)
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 40px;
+    background-image: linear-gradient(to bottom right, #ffffff 50%, transparent 50%)
+  }
+}

@@ -1,0 +1,15 @@
+.site-menu-list__item {
+  padding: 17px 0;
+  text-align: center;
+  list-style-type: none;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+.site-menu-list__link {
+  @include set-font(18px, 28px);
+  font-weight: $font-bold;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+}

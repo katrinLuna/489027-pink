@@ -1,0 +1,46 @@
+.user-photo {
+  background-color: $white;
+}
+
+.user-photo__title {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  @include set-font (14px, 30px);
+  color: $corp-blue;
+  text-align: center;
+}
+
+.user-photo__img-panoramic-wrapper {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: 'панорама дня';
+    position: absolute;
+    top: 0;
+    right: 6%;
+    width: 140px;
+    height: 31px;
+    padding-top: 6px;
+    @include set-font (12px, 24px);
+    color: $white;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    background-color: $corp-pink;
+    text-align: center;
+  }
+}
+
+.user-photo__list {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.user-photo__item {
+  margin-bottom: 20px;
+}

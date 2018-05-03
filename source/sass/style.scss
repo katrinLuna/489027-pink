@@ -1,0 +1,46 @@
+@import "normalize";
+@import "fonts";
+@import "variables";
+@import "visually-hidden";
+@import "mixins";
+
+//common styles
+body {
+  width: 320px;
+  margin: 0 auto;
+  font-family: $font, "Arial", sans-serif;
+  font-weight: 400;
+  outline: 1px solid red;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+@import "./blocks/page-header";
+@import "./blocks/main-nav";
+@import "./blocks/site-menu-list";
+@import "./blocks/page-title";
+
+//styles for index page
+@import "./blocks/download";
+@import "./blocks/shop-list";
+@import "./blocks/advantages";
+@import "./blocks/reviews";
+@import "./blocks/pricing";
+@import "./blocks/contacts";
+
+//styles for photo page
+@import "./blocks/user-photo";
+@import "./blocks/photo-item";
+@import "./blocks/photo-editor";
+@import "./blocks/editing-picture";
+@import "./blocks/page-footer";
+
+//styles for contest-form page
+@import "./blocks/contest";
+@import "./blocks/form-list";
