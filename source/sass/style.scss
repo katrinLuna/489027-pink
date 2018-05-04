@@ -8,7 +8,7 @@
 body {
   width: 320px;
   margin: 0 auto;
-  font-family: $font, "Arial", sans-serif;
+  font-family: $font;
   font-weight: 400;
   outline: 1px solid red;
 }
@@ -21,6 +21,7 @@ img {
 button {
   cursor: pointer;
 }
+
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/site-menu-list";
