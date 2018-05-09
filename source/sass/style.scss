@@ -6,10 +6,12 @@
 
 //common styles
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
+  padding: 0;
   font-family: $font;
   font-weight: 400;
+  font-style: normal;
   outline: 1px solid red;
 }
 
@@ -22,6 +24,10 @@ button {
   cursor: pointer;
 }
 
+.no-mobile {
+  display: none;
+}
+
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/site-menu-list";
@@ -31,6 +37,7 @@ button {
 @import "./blocks/download";
 @import "./blocks/shop-list";
 @import "./blocks/advantages";
+@import "./blocks/effect";
 @import "./blocks/reviews";
 @import "./blocks/pricing";
 @import "./blocks/contacts";

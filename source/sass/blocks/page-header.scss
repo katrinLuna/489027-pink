@@ -16,7 +16,17 @@
   width: 25px;
   height: 25px;
   background-color: $corp-blue;
-  background-image: url(../img/icon-menu-cross.svg);
+  background-image: url("../img/icon-menu-cross.svg");
   @include solid-bg;
   border: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__mob-menu-toggle {
+    display: none;
+  }
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
 }
