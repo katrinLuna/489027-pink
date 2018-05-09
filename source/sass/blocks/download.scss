@@ -65,7 +65,7 @@
   .download {
     display: flex;
     justify-content: space-around;
-    align-items: middle;
+    align-items: center;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     @include solid-bg;
   }

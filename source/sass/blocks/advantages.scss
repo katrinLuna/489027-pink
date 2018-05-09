@@ -54,7 +54,7 @@
   .advantages__grid-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: middle;
+    align-items: center;
   }
 
   .advantage__list {
@@ -68,7 +68,7 @@
   .advantage__list {
     display: flex;
     justify-content: space-between;
-    align-items: top;
+    align-items: flex-start;
   }
 
   .advanteges__item{

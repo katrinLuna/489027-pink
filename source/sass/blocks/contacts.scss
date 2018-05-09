@@ -82,3 +82,20 @@
     background-image: linear-gradient(to bottom right, $white 50%, transparent 50%)
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__header-two-line {
+    display: block;
+  }
+
+  .contacts__item-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    width: 271px;
+  }
+}
+

@@ -105,13 +105,17 @@
     width: 170px;
   }
 
-  .pricing__title--none {
+  .pricing__title--mock {
     display: block;
     border: none;
   }
 
   .pricing__included-text {
     display: none;
+  }
+
+  .pricing__included-text--no-mobile {
+    display: block;
   }
 
   .pricing__included--no-mobile {
