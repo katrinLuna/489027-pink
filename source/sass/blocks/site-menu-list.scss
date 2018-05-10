@@ -13,3 +13,20 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: $desktop-width) {
+  .site-menu-list__item {
+    border: none;
+    padding-right: 82px;
+  }
+
+  .site-menu-list__item:last-child {
+    padding-right: 0;
+  }
+
+  .site-menu-list__link {
+  @include set-font(18px, 18px);
+  font-weight: 400;
+  text-transform: none;
+  }
+}

@@ -44,3 +44,20 @@
 .user-photo__item {
   margin-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .user-photo__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photo__list {
+    width: 940px;
+  }
+}

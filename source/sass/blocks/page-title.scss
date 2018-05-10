@@ -10,11 +10,18 @@
   text-align: center;
 }
 
-
 .page-title__text {
   width: 80%;
   margin: 0 auto;
   @include set-font (24px, 28px);
   font-weight: $font-light;
   color: $white;
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    min-height: 394px;
+    padding-top: 186px;
+  }
 }

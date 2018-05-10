@@ -33,7 +33,7 @@
             <a class="site-menu-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-menu-list__item">
-            <a class="site-menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+            <a class="site-menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
     </nav>
@@ -54,14 +54,14 @@
       </div>
 
       <ul class="user-photo__list">
-        <li class="user-photo__item photo-item">
+        <li class="user-photo__item photo-item photo-item--panoramic">
           <blockquote class="photo-item__quote">
             <cite class="photo-item__author">Анна</cite>
             <date class="photo-item__date">(5 минут назад)</date>
             <p class="photo-item__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы</p>
           </blockquote>
-          <p class="photo-item__like">нравится:
-            <span class="photo-item__count-like">215</span>
+          <p class="photo-item__like photo-item__like--panoramic">
+            <span class="photo-item__count-like">нравится: 215</span>
           </p>
         </li>
         <li class="user-photo__item photo-item">
@@ -73,8 +73,8 @@
             <date class="photo-item__date">(5 часов назад)</date>
             <p class="photo-item__text">Вчера он на луну летал, сегодня в руки к нас попал.</p>
           </blockquote>
-          <p class="photo-item__like">нравится:
-            <span class="photo-item__count-like">356</span>
+          <p class="photo-item__like">
+            <span class="photo-item__count-like">нравится: 356</span>
           </p>
         </li>
         <li class="user-photo__item photo-item">
@@ -86,8 +86,8 @@
             <date class="photo-item__date">(12 часов назад)</date>
             <p class="photo-item__text">Соседи будут рады!</p>
           </blockquote>
-          <p class="photo-item__like">нравится:
-            <span class="photo-item__count-like">666</span>
+          <p class="photo-item__like">
+            <span class="photo-item__count-like">нравится: 666</span>
           </p>
         </li>
         <li class="user-photo__item photo-item">
@@ -99,8 +99,8 @@
             <date class="photo-item__date">(20 часов назад)</date>
             <p class="photo-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           </blockquote>
-          <p class="photo-item__like">нравится:
-            <span class="photo-item__count-like">215</span>
+          <p class="photo-item__like">
+            <span class="photo-item__count-like">нравится: 215</span>
           </p>
         </li>
         <li class="user-photo__item photo-item">
@@ -112,8 +112,8 @@
             <date class="photo-item__date">(25 часов назад)</date>
             <p class="photo-item__text">Самая кубанская в мире!</p>
           </blockquote>
-          <p class="photo-item__like">нравится:
-            <span class="photo-item__count-like">4</span>
+          <p class="photo-item__like">
+            <span class="photo-item__count-like">нравится: 4</span>
           </p>
         </li>
         <li class="user-photo__item photo-item">
@@ -125,8 +125,8 @@
             <date class="photo-item__date">(40 часов назад)</date>
             <p class="photo-item__text">Где снег-то?</p>
           </blockquote>
-          <p class="photo-item__like">нравится:
-            <span class="photo-item__count-like">150</span>
+          <p class="photo-item__like">
+            <span class="photo-item__count-like">нравится: 150</span>
           </p>
         </li>
         <li class="user-photo__item photo-item">
@@ -138,8 +138,8 @@
             <date class="photo-item__date">(45 часов назад)</date>
             <p class="photo-item__text">Всем GM и взаимные лайки!</p>
           </blockquote>
-          <p class="photo-item__like">нравится:
-            <span class="photo-item__count-like">2560</span>
+          <p class="photo-item__like">
+            <span class="photo-item__count-like">нравится: 2560</span>
           </p>
         </li>
       </ul>
@@ -149,42 +149,56 @@
       <p class="photo-editor__title">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в телефоне</p>
 
       <form class="photo-editor__picture-edit editing-picture" action="https://echo.htmlacademy.ru" method="get">
-          <img class="editing-picture__img" src="img/photo-road-mobile@1x.jpg" width="" height="" alt="Запилите свой бомбический фотошодевр!">
-          <ul class="editing-picture__list-tools">
-            <li class="editing-picture__item editing-picture__item--crop">
-              <label class="editing-picture__title-checkbox" for="crop-tool">
-                <img class="editing-picture__tool-icon" src="img/icon-editor-crop.svg" width="48" height="48" alt="Инструмент обработки фотографии: обрезка заваленного горизонта">
-              </label>
-              <input class="editing-picture__field-checkbox visually-hidden" id="crop-tool" type="checkbox" name="crop-tool">
-              <div class="editing-picture__range-conteiner">
-                <div class="editing-picture__range-line"></div>
+        <div class="editing-picture__wrapper">
+          <div class="editing-picture__img-wrapper">
+            <img class="editing-picture__img" src="img/photo-road-mobile@1x.jpg" width="" height="" alt="Запилите свой бомбический фотошодевр!">
+          </div>
+          <div class="editing-picture__tools-wrapper">
+            <ul class="editing-picture__list-tools">
+              <li class="editing-picture__item editing-picture__item--crop">
+                <label class="editing-picture__title-checkbox" for="crop-tool">
+                  <img class="editing-picture__tool-icon" src="img/icon-editor-crop.svg" width="48" height="48" alt="Инструмент обработки фотографии: обрезка заваленного горизонта">
+                </label>
+                <input class="editing-picture__field-checkbox visually-hidden" id="crop-tool" type="checkbox" name="crop-tool">
+                <div class="editing-picture__range-conteiner editing-picture__range-conteiner--no-mobile">
+                  <div class="editing-picture__range-line">
+                    <div class="editing-picture__range-point editing-picture__range-point--crop"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="editing-picture__item editing-picture__item--color">
+                <label class="editing-picture__title-checkbox" for="color-tool">
+                  <img class="editing-picture__tool-icon" src="img/icon-editor-fill.svg" width="48" height="48" alt="Инструмент обработки фотографии: вытянуть цвет">
+                </label>
+                <input class="editing-picture__field-checkbox visually-hidden" id="color-tool" type="checkbox" name="color-tool">
+                <div class="editing-picture__range-conteiner editing-picture__range-conteiner--no-mobile">
+                  <div class="editing-picture__range-line">
+                    <div class="editing-picture__range-point editing-picture__range-point--color"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="editing-picture__item editing-picture__item--light">
+                <label class="editing-picture__title-checkbox" for="light-tool">
+                  <img class="editing-picture__tool-icon" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Инструмент обработки фотографии: яркость">
+                </label>
+                <input class="editing-picture__field-checkbox visually-hidden" id="light-tool" type="checkbox" name="light-tool"><!--оживление интерактивных элементов^ на css привязка инпутов к label и кастомизация с помощью признака checked.-->
+                <div class="editing-picture__range-conteiner editing-picture__range-conteiner--no-mobile">
+                  <div class="editing-picture__range-line">
+                    <div class="editing-picture__range-point editing-picture__range-point--light"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="editing-picture__range-conteiner editing-picture__range-conteiner--mobile-only">
+              <div class="editing-picture__range-line">
                 <div class="editing-picture__range-point"></div>
               </div>
-            </li>
-            <li class="editing-picture__item editing-picture__item--color">
-              <label class="editing-picture__title-checkbox" for="color-tool">
-                <img class="editing-picture__tool-icon" src="img/icon-editor-fill.svg" width="48" height="48" alt="Инструмент обработки фотографии: вытянуть цвет">
-              </label>
-              <input class="editing-picture__field-checkbox visually-hidden" id="color-tool" type="checkbox" name="color-tool">
-              <div class="editing-picture__range-conteiner">
-                <div class="editing-picture__range-line"></div>
-                <div class="editing-picture__range-point"></div>
-              </div>
-            </li>
-            <li class="editing-picture__item editing-picture__item--light">
-              <label class="editing-picture__title-checkbox" for="light-tool">
-                <img class="editing-picture__tool-icon" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Инструмент обработки фотографии: яркость">
-              </label>
-              <input class="editing-picture__field-checkbox visually-hidden" id="light-tool" type="checkbox" name="light-tool"><!--оживление интерактивных элементов^ на css привязка инпутов к label и кастомизация с помощью признака checked.-->
-            </li>
-          </ul>
-        <div class="editing-picture__range-conteiner editing-picture__range-conteiner--active">
-          <div class="editing-picture__range-line editing-picture__range-line--active"></div>
-          <div class="editing-picture__range-point editing-picture__range-point--active"></div>
-        </div>
-        <div class="editing-picture__btn-wrapper">
-          <button class="editing-picture__btn photo-editor__btn--submit" type="submit">Запостить</button>
-          <button class="editing-picture__btn photo-editor__btn--reset" type="reset">Отмена</button>
+            </div>
+            <div class="editing-picture__btn-wrapper">
+              <button class="editing-picture__btn photo-editor__btn--submit" type="submit">Запостить</button>
+              <button class="editing-picture__btn photo-editor__btn--reset" type="reset">Отмена</button>
+            </div>
+          </div>
         </div>
       </form>
     </section>

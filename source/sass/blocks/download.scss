@@ -81,3 +81,9 @@
     text-align: center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .download {
+    padding-top: 100px;
+  }
+}
