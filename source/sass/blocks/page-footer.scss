@@ -93,15 +93,23 @@
     padding-bottom: 42px;
   }
 
-  .page-footer__social {
   .page-footer--main-page {
-    display: block;
+    display: flex;
   }
 
+  .page-footer__social {
     margin: 0;
   }
 
   .page-footer__copyright {
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-left: 130px;
+    padding-right: 130px;
+    box-sizing: border-box;
   }
 }

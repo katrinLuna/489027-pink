@@ -96,27 +96,34 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-list__fieldset form-list__fieldset--contact">
-            <label class="form-list__title-field" for="mobile-num">номер телефона</label>
-            <input class="form-list__field" id="mobile-num" type="tel" name="mobile-num" placeholder="Номер, пожалуйста">
-            <label class="form-list__title-field" for="email">адрес почты</label>
-            <input class="form-list__field" id="email" type="email" name="email" placeholder="Введите почту *"  required>
+          <fieldset class="form-list__fieldset form-list__fieldset--contact fieldset-contact">
+            <legend class="form-list__caption form-list__caption--no-mobile">контактная информация</legend>
+            <div class="fieldset-contact__fields-wrapper">
+              <div class="fieldset-contact__group">
+                <label class="fieldset-contact__title-field" for="mobile-num">номер телефона</label>
+                <input class="fieldset-contact__field" id="mobile-num" type="tel" name="mobile-num" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="fieldset-contact__group">
+                <label class="fieldset-contact__title-field" for="email">адрес почты</label>
+                <input class="fieldset-contact__field" id="email" type="email" name="email" placeholder="Введите почту *"  required>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="form-list__fieldset form-list__fieldset--apps-list">
+          <fieldset class="form-list__fieldset form-list__fieldset--apps-list fieldset-apps">
             <legend class="form-list__caption">с каким приложением путешествовали?</legend>
             <ul class="form-list__ul-list">
-              <li class="form-list__item form-list__item--radio">
-                <input class="form-list__field-radio visually-hidden" id="ios" type="radio" name="apps-chose" value="ios" checked>
-                <label class="form-list__title-radio" for="ios">Pink для iOS</label>
+              <li class="fieldset-apps__item-radio">
+                <input class="fieldset-apps__field-radio visually-hidden" id="ios" type="radio" name="apps-chose" value="ios" checked>
+                <label class="fieldset-apps__title-radio" for="ios">Pink для iOS</label>
               </li>
-              <li class="form-list__item form-list__item--radio">
-                <input class="form-list__field-radio visually-hidden" id="android" type="radio" name="apps-chose" value="android">
-                <label class="form-list__title-radio" for="android">Pink на Android</label>
+              <li class="fieldset-apps__item-radio">
+                <input class="fieldset-apps__field-radio visually-hidden" id="android" type="radio" name="apps-chose" value="android">
+                <label class="fieldset-apps__title-radio" for="android">Pink на Android</label>
               </li>
-              <li class="form-list__item form-list__item--radio">
-                <input class="form-list__field-radio visually-hidden" id="windows" type="radio" name="apps-chose" value="windows">
-                <label class="form-list__title-radio" for="windows">Windows Phone</label>
+              <li class="fieldset-apps__item-radio">
+                <input class="fieldset-apps__field-radio visually-hidden" id="windows" type="radio" name="apps-chose" value="windows">
+                <label class="fieldset-apps__title-radio" for="windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>

@@ -1,0 +1,43 @@
+.fieldset-apps__item-radio {
+  margin-bottom: 34px;
+}
+
+.fieldset-apps__title-radio {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  @include set-font (18px, 30px);
+  color: $corp-blue;
+
+  &::before {
+    content: '';
+    margin-right: 31px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $corp-blue;
+  }
+
+  &:active::before {
+    border-color: $corp-pink;
+  }
+}
+
+.fieldset-apps__field-radio:checked + .fieldset-apps__title-radio::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background-color: $corp-pink;
+  border-radius: 50%;
+}
