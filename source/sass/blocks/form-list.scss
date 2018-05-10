@@ -32,7 +32,7 @@
   @include set-font (14px, 30px);
   color: $corp-pink;
   text-transform: uppercase;
-}
+}/*удалить как разнесу*/
 
 .form-list__field {
   width: 100%;
@@ -56,7 +56,7 @@
   &::placeholder {
     color: $corp-blue;
   }
-}
+}/*удалить как разнесу*/
 
 .form-list__caption {
   text-align: center;
@@ -86,39 +86,6 @@
   &--radio {
     margin-bottom: 35px;
   }
-}
-
-.form-list__title-checkbox {
-  display: inline-block;
-  vertical-align: middle;
-  @include set-font (18px, 30px);
-  color: $corp-blue;
-
-  &::before {
-    content: '';
-    margin-right: 31px;
-    display: inline-block;
-    vertical-align: middle;
-    width: 40px;
-    height: 40px;
-    box-sizing: border-box;
-    border: 2px solid #e5e5e5;
-    }
-
-  &:hover::before,
-  &:focus::before {
-    border-color: $corp-blue;
-  }
-
-  &:active::before {
-    border-color: $corp-pink;
-  }
-}
-
-.form-list__field-checkbox:checked + .form-list__title-checkbox::before {
-  background-color: $white;
-  background-image: url('../img/icon-yes.svg');
-  @include solid-bg(auto);
 }
 
 .form-list__title-radio {
@@ -216,4 +183,71 @@
 
 .form-list__description-star {
   color: $corp-pink;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .form-list__fieldset {
+    padding: 0;
+  }
+
+  .form-list__fieldset--adventure-list {
+    order: 3;
+  }
+
+  .form-list__fieldset--contact {
+    order: 2;
+  }
+
+  .form-list__fieldset--apps-list {
+    order: 1;
+  }
+
+  .form-list__fieldset--freeform {
+    order: 4;
+  }
+
+  .form-list-action__wrapper {
+    order: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-list__button {
+    width: auto;
+  }
+
+ .form-list__description {
+  width: auto;
+ }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .form-list__fieldset--person {
+    width: 45%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form-list__fieldset--apps-list {
+    width: 45%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

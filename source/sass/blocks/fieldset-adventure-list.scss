@@ -1,0 +1,55 @@
+.fieldset-adventure__ul-list {
+  margin-top: 39px;
+  margin-bottom: 0px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.fieldset-adventure__item {
+  margin-bottom: 42px;
+
+  &--radio {
+    margin-bottom: 35px;
+  }
+}
+
+.fieldset-adventure__title-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  @include set-font (18px, 30px);
+  color: $corp-blue;
+
+  &::before {
+    content: '';
+    margin-right: 31px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $corp-blue;
+  }
+
+  &:active::before {
+    border-color: $corp-pink;
+  }
+}
+
+.fieldset-adventure__field-checkbox:checked + .fieldset-adventure__title-checkbox::before {
+  background-color: $white;
+  background-image: url('../img/icon-yes.svg');
+  @include solid-bg(auto);
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-adventure__ul-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
