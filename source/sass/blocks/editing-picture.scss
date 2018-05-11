@@ -14,25 +14,24 @@
     margin-right: 10px;
 }
 
-.editing-picture__range-conteiner--active {
-  position: relative;
+.editing-picture__range-conteiner {
   width: 100%;
   padding-top: 34px;
   padding-bottom: 35px;
   border-bottom: 1px solid #dddfe0;
 }
 
-.editing-picture__range-line--active {
-
+.editing-picture__range-line {
+  position: relative;
   width: 240px;
   height: 2px;
   margin: 0 auto;
   background-color: $corp-blue;
 }
 
-.editing-picture__range-point--active {
+.editing-picture__range-point {
   position: absolute;
-  top: 27px;
+  top: -7px;
   right: 74px;
   width: 16px;
   height: 16px;
@@ -41,6 +40,10 @@
   border: 2px solid $corp-pink;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.editing-picture__range-conteiner--no-mobile {
+  display: none;
 }
 
 .editing-picture__btn-wrapper {
@@ -94,5 +97,72 @@
   &:active {
     color: rgba($white, 0.3);
     background-color: #b5b9be;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .editing-picture__range-conteiner--mobile-only {
+    display: none;
+  }
+
+  .editing-picture__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .editing-picture__list-tools {
+    display: block;
+  }
+
+  .editing-picture__item {
+    font-size: 0;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .editing-picture__title-checkbox {
+    display: inline-block;
+    width: 20px;
+    vertical-align: middle;
+  }
+
+  .editing-picture__range-conteiner--no-mobile {
+    display: inline-block;
+    width: 200px;
+    vertical-align: middle;
+    border: none;
+  }
+
+  .editing-picture__range-line {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .editing-picture__wrapper {
+    width: 940px;
+    background-color: $grey;
+  }
+
+  .editing-picture__list-tools {
+    width: 410px;
+    text-align: left;
+  }
+
+  .editing-picture__title-checkbox {
+    width: 45px;
+  }
+
+  .editing-picture__range-conteiner--no-mobile {
+    width: 288px;
+  }
+
+  .editing-picture__btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 184px;
   }
 }

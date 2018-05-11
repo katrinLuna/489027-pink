@@ -54,3 +54,37 @@
 
   }
 }
+
+@media (min-width: $tablet-width) {
+  .photo-item {
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .photo-item--panoramic {
+    width: 620px;
+    position: relative;
+  }
+
+  .photo-item__like--panoramic {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .photo-item__like {
+    display:  flex;
+    justify-content:  space-between;
+
+    &::before {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-item--panoramic {
+    width: 940px;
+  }
+}

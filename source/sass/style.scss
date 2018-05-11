@@ -6,11 +6,12 @@
 
 //common styles
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
-  font-family: $font, "Arial", sans-serif;
+  padding: 0;
+  font-family: $font;
   font-weight: 400;
-  outline: 1px solid red;
+  font-style: normal;
 }
 
 img {
@@ -21,15 +22,22 @@ img {
 button {
   cursor: pointer;
 }
+
+.no-mobile {
+  display: none;
+}
+
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/site-menu-list";
 @import "./blocks/page-title";
+@import "./blocks/page-main-action-width";
 
 //styles for index page
 @import "./blocks/download";
 @import "./blocks/shop-list";
 @import "./blocks/advantages";
+@import "./blocks/effect";
 @import "./blocks/reviews";
 @import "./blocks/pricing";
 @import "./blocks/contacts";
@@ -44,3 +52,7 @@ button {
 //styles for contest-form page
 @import "./blocks/contest";
 @import "./blocks/form-list";
+@import "./blocks/fieldset-person";
+@import "./blocks/fieldset-adventure";
+@import "./blocks/fieldset-contact";
+@import "./blocks/fieldset-apps";

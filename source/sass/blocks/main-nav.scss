@@ -8,3 +8,16 @@
   margin-bottom: 0px;
   padding-left: 0;
 }
+
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    margin-top: 0;
+    border-top: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

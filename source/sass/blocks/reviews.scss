@@ -37,3 +37,26 @@
   height: 19px;
   text-align: center;
 }
+
+
+@media (min-width: $tablet-width) {
+  .reviews__blockquote {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__person-bio {
+    display: block;
+  }
+
+  .reviews__text {
+    order: -1;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .reviews__toggles {
+    display: none;
+  }
+}

@@ -1,0 +1,59 @@
+.fieldset-person__title-field {
+  display: block;
+  padding-left: 23px;
+  padding-bottom: 4px;
+  @include set-font (14px, 30px);
+  color: $corp-pink;
+  text-transform: uppercase;
+}
+
+.fieldset-person__field {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 15px 23px;
+  box-sizing: border-box;
+  @include set-font (18px, 30px);
+  color: $corp-blue;
+  border: 2px solid #e5e5e5;
+
+  &:hover,
+  &:focus {
+    border-color: $corp-blue;
+  }
+
+  &:active {
+    border-color: $corp-pink;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $corp-blue;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .fieldset-person__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .fieldset-person__title-field {
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 23px;
+  }
+
+  .fieldset-person__field {
+    width: auto;
+    display: inline-block;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-person {
+    width: 50%;
+  }
+}

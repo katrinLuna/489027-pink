@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .page-main-action-width {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main-action-width {
+    width: 940px;
+  }
+}

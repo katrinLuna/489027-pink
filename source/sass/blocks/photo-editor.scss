@@ -15,3 +15,15 @@
   background-color: $grey;
   padding-top: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .photo-editor__picture-edit {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-editor__picture-edit {
+    background-color: $white;
+  }
+}

@@ -17,7 +17,7 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 27px;
 }
 
@@ -45,8 +45,8 @@
 
   &:hover,
   &:focus {
-  color: $corp-blue;
-  text-decoration: underline;
+    color: $corp-blue;
+    text-decoration: underline;
   }
 
   &:active {
@@ -57,7 +57,7 @@
 .contacts__img-map {
   position: relative;
   height: 200px;
-  background-image: url('../img/bg-map-mobile@1x.png');
+  background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -69,7 +69,7 @@
     left: 0;
     width: 50%;
     height: 40px;
-    background-image: linear-gradient(to bottom left, #ffffff 50%, transparent 50%)
+    background-image: linear-gradient(to bottom left, $white 50%, transparent 50%)
   }
 
   &::after{
@@ -79,6 +79,23 @@
     right: 0;
     width: 50%;
     height: 40px;
-    background-image: linear-gradient(to bottom right, #ffffff 50%, transparent 50%)
+    background-image: linear-gradient(to bottom right, $white 50%, transparent 50%)
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__header-two-line {
+    display: block;
+  }
+
+  .contacts__item-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    width: 271px;
+  }
+}
+

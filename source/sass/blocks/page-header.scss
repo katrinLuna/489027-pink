@@ -16,7 +16,29 @@
   width: 25px;
   height: 25px;
   background-color: $corp-blue;
-  background-image: url(../img/icon-menu-cross.svg);
+  background-image: url("../img/icon-menu-cross.svg");
   @include solid-bg;
   border: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__mob-menu-toggle {
+    display: none;
+  }
+  .page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 130px;
+    box-sizing: border-box;
+    background-color: rgba(#616c77, 0.3);
+  }
+
+  .page-header__logo-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

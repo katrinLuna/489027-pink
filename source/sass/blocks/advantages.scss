@@ -48,3 +48,38 @@
   text-align: center;
   overflow: hidden;
 }
+
+
+@media (min-width: $tablet-width) {
+  .advantages__grid-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .advantage__list {
+    width: 60%;
+    order: 1;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .advantage__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .advanteges__item{
+    text-align: center;
+  }
+
+  .advantages__img-list {
+    display: block;
+  }
+
+  .advantages__img-wrapper {
+    display: none;
+  }
+}
