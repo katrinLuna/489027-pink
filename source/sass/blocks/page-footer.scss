@@ -5,7 +5,6 @@
 }
 
 .page-footer__logo {
-
   &:active {
     opacity: 0.3;
   }
@@ -31,6 +30,7 @@
   box-sizing: border-box;
   width: 50px;
   height: 50px;
+
   @include solid-bg(auto);
   border: 2px solid #e9ebec;
   border-radius: 50%;
@@ -46,15 +46,15 @@
 }
 
 .page-footer__social-link--twitter {
-  background-image: url('../img/icon-twitter.svg');
+  background-image: url("../img/icon-twitter.svg");
 }
 
 .page-footer__social-link--facebook {
-  background-image: url('../img/icon-facebook.svg');
+  background-image: url("../img/icon-facebook.svg");
 }
 
 .page-footer__social-link--youtube {
-  background-image: url('../img/icon-youtube.svg');
+  background-image: url("../img/icon-youtube.svg");
 }
 
 
@@ -62,7 +62,7 @@
   padding-bottom: 50px;
 
   &:active {
-  opacity: 0.3;
+    opacity: 0.3;
   }
 }
 
@@ -75,6 +75,7 @@
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
+
   @include set-font(14px, 18px);
   color: $corp-blue;
 }

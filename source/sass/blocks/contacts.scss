@@ -8,6 +8,7 @@
 .contacts__header {
   margin-top: 0;
   margin-bottom: 38px;
+
   @include set-font(24px, 28px);
   font-weight: $font-light;
   color: $corp-blue;
@@ -24,6 +25,7 @@
 .contacts__title {
   display: block;
   margin-bottom: 7px;
+
   @include set-font(18px, 18px);
   font-weight: $font-bold;
   color: $corp-blue;
@@ -31,6 +33,7 @@
 
 .contacts__detail {
   display: block;
+
   @include set-font(24px, 26px);
   font-weight: $font-light;
   color: $corp-pink;
@@ -62,24 +65,24 @@
   background-size: cover;
   background-position: center bottom;
 
-  &::before{
-    content: '';
+  &::before {
+    content: " ";
     position: absolute;
     top: 0;
     left: 0;
     width: 50%;
     height: 40px;
-    background-image: linear-gradient(to bottom left, $white 50%, transparent 50%)
+    background-image: linear-gradient(to bottom left, $white 50%, transparent 50%);
   }
 
-  &::after{
-    content: '';
+  &::after {
+    content: " ";
     position: absolute;
     top: 0;
     right: 0;
     width: 50%;
     height: 40px;
-    background-image: linear-gradient(to bottom right, $white 50%, transparent 50%)
+    background-image: linear-gradient(to bottom right, $white 50%, transparent 50%);
   }
 }
 
@@ -98,4 +101,3 @@
     width: 271px;
   }
 }
-

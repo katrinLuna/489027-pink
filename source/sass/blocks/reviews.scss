@@ -18,6 +18,7 @@
 .reviews__person-name {
   margin-top: 0;
   margin-bottom: 13px;
+
   @include set-font(18px, 30px);
   color: $black;
   font-weight: $font-bold;
@@ -27,13 +28,14 @@
 .reviews__text {
   margin-top: 12px;
   margin-bottom: 0;
+
   @include set-font(14px, 30px);
   color: $corp-blue;
 }
 
 .reviews__toggles {
   margin-top: 35px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   height: 19px;
   text-align: center;
 }

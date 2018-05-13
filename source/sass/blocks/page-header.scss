@@ -17,6 +17,7 @@
   height: 25px;
   background-color: $corp-blue;
   background-image: url("../img/icon-menu-cross.svg");
+
   @include solid-bg;
   border: none;
 }
@@ -25,6 +26,7 @@
   .page-header__mob-menu-toggle {
     display: none;
   }
+
   .page-header {
     position: absolute;
     top: 0;

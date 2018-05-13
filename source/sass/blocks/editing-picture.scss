@@ -9,9 +9,9 @@
   padding-top: 37px;
 }
 
-.editing-picture__item--light{
-    margin-left: 8px;
-    margin-right: 10px;
+.editing-picture__item--light {
+  margin-left: 8px;
+  margin-right: 10px;
 }
 
 .editing-picture__range-conteiner {
@@ -60,6 +60,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   box-sizing: border-box;
+
   @include set-font(18px, 18px);
   font-weight: $font-bold;
   text-decoration: none;

@@ -9,6 +9,7 @@
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
+
   @include set-font (24px, 28px);
   color: $corp-blue;
   font-weight: $font-light;
@@ -31,6 +32,7 @@
 .advanteges__title {
   margin-top: 0;
   margin-bottom: 13px;
+
   @include set-font(18px, 24px);
   color: $black;
   font-weight: $font-bold;
@@ -39,6 +41,7 @@
 .advanteges__description {
   margin-top: 0;
   margin-bottom: 0;
+
   @include set-font(14px, 24px);
   color: $corp-blue;
 }
@@ -71,7 +74,7 @@
     align-items: flex-start;
   }
 
-  .advanteges__item{
+  .advanteges__item {
     text-align: center;
   }
 

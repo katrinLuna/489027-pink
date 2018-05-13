@@ -25,8 +25,8 @@
   }
 
   .site-menu-list__link {
-  @include set-font(18px, 18px);
-  font-weight: 400;
-  text-transform: none;
+    @include set-font(18px, 18px);
+    font-weight: 400;
+    text-transform: none;
   }
 }

@@ -14,21 +14,22 @@
   color: $corp-blue;
 }
 
-.photo-item__author{
+.photo-item__author {
   @include set-font (14px,24px);
   font-weight: $font-bold;
   font-style: normal;
 }
 
-.photo-item__date{
+.photo-item__date {
   @include set-font (12px, 24px);
   font-weight: $font-light;
   text-transform: uppercase;
 }
 
-.photo-item__text{
+.photo-item__text {
   margin-top: 0;
   margin-bottom: 0;
+
   @include set-font (14px, 24px);
 }
 
@@ -38,20 +39,21 @@
   padding-top: 8px;
   padding-left: 17px;
   padding-right: 17px;
+
   @include set-font (12px, 24px);
   color: $corp-pink;
   text-transform: uppercase;
 
   &::before {
-    content: '';
+    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 14px;
     height: 13px;
     margin-right: 18px;
-    background-image: url('../img/icon-heart.svg');
-    @include solid-bg ();
+    background-image: url("../img/icon-heart.svg");
 
+    @include solid-bg;
   }
 }
 
@@ -74,8 +76,8 @@
   }
 
   .photo-item__like {
-    display:  flex;
-    justify-content:  space-between;
+    display: flex;
+    justify-content: space-between;
 
     &::before {
       order: 1;
