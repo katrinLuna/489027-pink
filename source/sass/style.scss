@@ -1,37 +1,16 @@
 @import "normalize";
 @import "fonts";
 @import "variables";
-@import "visually-hidden";
 @import "mixins";
 
 //common styles
-body {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  font-family: $font;
-  font-weight: 400;
-  font-style: normal;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  cursor: pointer;
-}
-
-.no-mobile {
-  display: none;
-}
-
+@import "common";
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/site-menu-list";
 @import "./blocks/page-title";
 @import "./blocks/page-main-action-width";
+@import "./blocks/page-footer";
 
 //styles for index page
 @import "./blocks/download";
@@ -47,7 +26,6 @@ button {
 @import "./blocks/photo-item";
 @import "./blocks/photo-editor";
 @import "./blocks/editing-picture";
-@import "./blocks/page-footer";
 
 //styles for contest-form page
 @import "./blocks/contest";
@@ -56,3 +34,4 @@ button {
 @import "./blocks/fieldset-adventure";
 @import "./blocks/fieldset-contact";
 @import "./blocks/fieldset-apps";
+@import "./blocks/popup";
