@@ -8,6 +8,7 @@
 .page-header__logo-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -21,6 +22,18 @@
   @include solid-bg;
   border: none;
 }
+
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 27px;
+  }
+
+  .page-header__logo-wrapper {
+    min-height: 60px;
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .page-header__mob-menu-toggle {
