@@ -15,6 +15,15 @@
   text-align: center;
 }
 
+
+.reviewes__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
 .reviews__person-name {
   margin-top: 0;
   margin-bottom: 13px;
@@ -36,23 +45,45 @@
 .reviews__toggles {
   margin-top: 35px;
   margin-bottom: 0;
-  height: 19px;
+  height: 12px;
   text-align: center;
 }
 
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    padding-top: 87px;
+  }
+
   .reviews__blockquote {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    margin: 0;
+  }
+
+  .reviews__person-name {
+    padding-top: 35px;
+    margin-bottom: 0;
+
+    @include set-font(20px, 30px);
   }
 
   .reviews__person-bio {
     display: block;
+    margin: 0;
+    padding-top: 3px;
+
+    @include set-font(14px, 30px);
+    color: $corp-blue;
   }
 
   .reviews__text {
     order: -1;
+
+    @include set-font(18px, 30px);
   }
 }
 
@@ -60,5 +91,24 @@
 @media (min-width: $desktop-width) {
   .reviews__toggles {
     display: none;
+  }
+
+  .reviews {
+    padding-top: 174px;
+  }
+
+  .reviews__list {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .reviews__person-name {
+    padding-top: 38px;
+
+    @include set-font(24px, 30px);
+  }
+
+  .reviews__person-bio {
+    @include set-font(18px, 30px);
   }
 }
