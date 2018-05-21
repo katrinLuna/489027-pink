@@ -21,6 +21,18 @@
 }
 
 
+@media (min-width: $tablet-width) {
+  .page-title {
+    min-height: 329px;
+    padding-top: 68px;
+  }
+
+  .page-title__text {
+    @include set-font (50px, 60px);
+  }
+}
+
+
 @media (min-width: $desktop-width) {
   .page-title {
     min-height: 394px;
