@@ -90,8 +90,9 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-bottom: 42px;
+    align-items: flex-start;
+    padding-top: 36px;
+    padding-bottom: 44px;
   }
 
   .page-footer--main-page {
@@ -100,17 +101,30 @@
 
   .page-footer__social {
     margin: 0;
+    padding-top: 2px;
+    padding-right: 19px;
   }
 
   .page-footer__copyright {
+    padding-top: 12px;
     padding-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-left: 130px;
-    padding-right: 130px;
     box-sizing: border-box;
+    padding-top: 68px;
+  }
+
+  .page-footer__social {
+    padding-top: 3px;
+    padding-right: 0;
+  }
+
+  .page-footer__copyright-text {
+    margin-right: 10px;
+
+    @include set-font(18px, 18px);
   }
 }

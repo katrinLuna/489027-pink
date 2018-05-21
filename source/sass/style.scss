@@ -9,7 +9,6 @@
 @import "./blocks/main-nav";
 @import "./blocks/site-menu-list";
 @import "./blocks/page-title";
-@import "./blocks/page-main-action-width";
 @import "./blocks/page-footer";
 @import "./blocks/slider-switch";
 @import "./blocks/slider-movement";
@@ -38,3 +37,5 @@
 @import "./blocks/fieldset-contact";
 @import "./blocks/fieldset-apps";
 @import "./blocks/popup";
+//common styles
+@import "./blocks/page-main-action-width";
