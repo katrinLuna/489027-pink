@@ -36,6 +36,10 @@
 @media (min-width: $desktop-width) {
   .page-title {
     min-height: 394px;
-    padding-top: 186px;
+    padding-top: 173px;
+  }
+
+  .page-title__text {
+    width: 50%;
   }
 }

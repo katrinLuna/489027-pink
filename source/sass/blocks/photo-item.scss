@@ -117,6 +117,7 @@
     position: absolute;
     top: 12px;
     right: 27px;
+    width: auto;
     padding-right: 0;
 
     &::before {
@@ -129,5 +130,9 @@
 @media (min-width: $desktop-width) {
   .photo-item--panoramic {
     width: 940px;
+  }
+
+  .photo-item__img {
+    height: 400px;
   }
 }
