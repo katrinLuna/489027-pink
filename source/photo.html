@@ -167,10 +167,10 @@
           <div class="editing-picture__tools-wrapper">
             <ul class="editing-picture__list-tools">
               <li class="editing-picture__item editing-picture__item--crop">
+                <input class="editing-picture__field-checkbox visually-hidden" id="crop-tool" type="checkbox" name="crop-tool">
                 <label class="editing-picture__title-checkbox" for="crop-tool">
                   <img class="editing-picture__tool-icon" src="img/icon-editor-crop.svg" width="48" height="48" alt="Инструмент обработки фотографии: обрезка заваленного горизонта">
                 </label>
-                <input class="editing-picture__field-checkbox visually-hidden" id="crop-tool" type="checkbox" name="crop-tool">
                 <div class="editing-picture__range-conteiner editing-picture__range-conteiner--no-mobile">
                   <div class="editing-picture__range-line">
                     <div class="editing-picture__range-point editing-picture__range-point--crop"></div>
@@ -178,10 +178,10 @@
                 </div>
               </li>
               <li class="editing-picture__item editing-picture__item--color">
-                <label class="editing-picture__title-checkbox" for="color-tool">
+                <input class="editing-picture__field-checkbox visually-hidden" id="color-tool" type="checkbox" name="color-tool">
+                <label class="editing-picture__title-checkbox editing-picture__title-checkbox--color" for="color-tool">
                   <img class="editing-picture__tool-icon" src="img/icon-editor-fill.svg" width="48" height="48" alt="Инструмент обработки фотографии: вытянуть цвет">
                 </label>
-                <input class="editing-picture__field-checkbox visually-hidden" id="color-tool" type="checkbox" name="color-tool">
                 <div class="editing-picture__range-conteiner editing-picture__range-conteiner--no-mobile">
                   <div class="editing-picture__range-line">
                     <div class="editing-picture__range-point editing-picture__range-point--color"></div>
@@ -189,10 +189,10 @@
                 </div>
               </li>
               <li class="editing-picture__item editing-picture__item--light">
-                <label class="editing-picture__title-checkbox" for="light-tool">
-                  <img class="editing-picture__tool-icon" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Инструмент обработки фотографии: яркость">
-                </label>
                 <input class="editing-picture__field-checkbox visually-hidden" id="light-tool" type="checkbox" name="light-tool"><!--оживление интерактивных элементов^ на css привязка инпутов к label и кастомизация с помощью признака checked.-->
+                <label class="editing-picture__title-checkbox editing-picture__title-checkbox--light" for="light-tool">
+                  <img class="editing-picture__tool-icon editing-picture__tool-icon--light" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Инструмент обработки фотографии: яркость">
+                </label>
                 <div class="editing-picture__range-conteiner editing-picture__range-conteiner--no-mobile">
                   <div class="editing-picture__range-line">
                     <div class="editing-picture__range-point editing-picture__range-point--light"></div>
@@ -206,8 +206,8 @@
               </div>
             </div>
             <div class="editing-picture__btn-wrapper">
-              <button class="editing-picture__btn photo-editor__btn--submit" type="submit">Запостить</button>
-              <button class="editing-picture__btn photo-editor__btn--reset" type="reset">Отмена</button>
+              <button class="editing-picture__btn editing-picture__btn--submit" type="submit">Запостить</button>
+              <button class="editing-picture__btn editing-picture__btn--reset" type="reset">Отмена</button>
             </div>
           </div>
         </div>
