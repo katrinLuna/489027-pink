@@ -1,0 +1,28 @@
+.slider-movement__toggles {
+  font-size: 0;
+}
+
+.slider-movement__toggle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  background-color: rgba($corp-blue, 0.3);
+  border-radius: 50%;
+  appearance: none;
+  border: none;
+
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+}
+
+.slider-movement__toggle--checked {
+  width: 12px;
+  height: 12px;
+  border: 3px solid $corp-blue;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}

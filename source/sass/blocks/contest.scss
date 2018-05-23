@@ -3,8 +3,29 @@
   margin: 0 auto;
   padding-top: 45px;
   padding-bottom: 37px;
+
   @include set-font (14px,30px);
   color: $corp-blue;
   font-weight: 400;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .contest__title {
+    padding-top: 93px;
+    padding-bottom: 71px;
+
+    @include set-font (18px,30px);
+  }
+
+  .contest__title--no-mobile {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest__title {
+    padding-top: 93px;
+    padding-bottom: 78px;
+  }
 }

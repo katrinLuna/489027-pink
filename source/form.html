@@ -17,8 +17,7 @@
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк">
       </a>
       <button class="page-header__mob-menu-toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-        <span class="visually-hidden">Закрыть меню</span>
+        <span class="visually-hidden">Открыть или закрыть меню</span>
       </button>
     </div>
     <nav class="main-nav">
@@ -30,7 +29,7 @@
             <a class="site-menu-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-menu-list__item site-menu-list__item--active">
-            <a class="site-menu-list__link">Конкурс</a>
+            <a class="site-menu-list__link site-menu-list__link--active">Конкурс</a>
           </li>
           <li class="site-menu-list__item">
             <a class="site-menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -41,12 +40,12 @@
 
   <main class="page-main-form">
       <div class="page-title">
-        <h1 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page-title__text page-title__text--wide">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
 
     <div class="page-main-action-width">
       <section class="contest">
-        <h2 class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</h2>
+        <h2 class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу&nbsp;бонусную карту! <span class="contest__title--no-mobile no-mobile">Пожалуйста заполните форму ниже:</span></h2>
 
         <form class="contest__request form-list" action="https://echo.htmlacademy.ru" method="post">
 
@@ -67,37 +66,37 @@
 
           <fieldset class="form-list__fieldset form-list__fieldset--adventure-list fieldset-adventure">
 
-            <legend class="form-list__caption">ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
+            <legend class="form-list__caption form-list__caption--adventure">ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
             <ul class="fieldset-adventure__ul-list">
-              <li class="fieldset-adventure__item">
+              <li class="fieldset-adventure__item fieldset-adventure__item--first-col">
                 <input class="fieldset-adventure__field-checkbox visually-hidden" id="shark" type="checkbox" name="shark" checked>
-                <label class="fieldset-adventure__title-checkbox" for="shark">Сделал селфи с акулой</label>
+                <label class="fieldset-adventure__title-checkbox" for="shark"><span class="fieldset-adventure__title-checkbox-text">Сделал селфи с акулой</span></label>
               </li>
-              <li class="fieldset-adventure__item">
+              <li class="fieldset-adventure__item fieldset-adventure__item--first-col">
                 <input class="fieldset-adventure__field-checkbox visually-hidden" id="fried" type="checkbox" name="fried" checked>
-                <label class="fieldset-adventure__title-checkbox" for="fried">Обгорел на пляже</label>
+                <label class="fieldset-adventure__title-checkbox" for="fried"><span class="fieldset-adventure__title-checkbox-text">Обгорел на пляже</span></label>
               </li>
-              <li class="fieldset-adventure__item">
+              <li class="fieldset-adventure__item fieldset-adventure__item--second-col">
                 <input class="fieldset-adventure__field-checkbox visually-hidden" id="norris" type="checkbox" name="norris">
-                <label class="fieldset-adventure__title-checkbox" for="norris">Видел Чака Норриса</label>
+                <label class="fieldset-adventure__title-checkbox" for="norris"><span class="fieldset-adventure__title-checkbox-text">Видел Чака Норриса</span></label>
               </li>
-              <li class="fieldset-adventure__item">
+              <li class="fieldset-adventure__item fieldset-adventure__item--second-col">
                 <input class="fieldset-adventure__field-checkbox visually-hidden" id="shopper" type="checkbox" name="shopper">
-                <label class="fieldset-adventure__title-checkbox" for="shopper">Накупил сувениров</label>
+                <label class="fieldset-adventure__title-checkbox" for="shopper"><span class="fieldset-adventure__title-checkbox-text">Накупил сувениров</span></label>
               </li>
-              <li class="fieldset-adventure__item">
+              <li class="fieldset-adventure__item fieldset-adventure__item--third-col">
                 <input class="fieldset-adventure__field-checkbox visually-hidden" id="superman" type="checkbox" name="superman" checked>
-                <label class="fieldset-adventure__title-checkbox" for="superman">Удержал башню</label>
+                <label class="fieldset-adventure__title-checkbox" for="superman"><span class="fieldset-adventure__title-checkbox-text">Удержал башню</span></label>
               </li>
-              <li class="fieldset-adventure__item">
+              <li class="fieldset-adventure__item fieldset-adventure__item--third-col">
                 <input class="fieldset-adventure__field-checkbox visually-hidden" id="destroy" type="checkbox" name="destroy">
-                <label class="fieldset-adventure__title-checkbox" for="destroy">Разгромил отель</label>
+                <label class="fieldset-adventure__title-checkbox" for="destroy"><span class="fieldset-adventure__title-checkbox-text">Разгромил отель</span></label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form-list__fieldset form-list__fieldset--contact fieldset-contact">
-            <legend class="form-list__caption form-list__caption--no-mobile">контактная информация</legend>
+            <legend class="form-list__caption form-list__caption--contact form-list__caption--no-mobile">контактная информация</legend>
             <div class="fieldset-contact__fields-wrapper">
               <div class="fieldset-contact__group">
                 <label class="fieldset-contact__title-field" for="mobile-num">номер телефона</label>
@@ -111,7 +110,7 @@
           </fieldset>
 
           <fieldset class="form-list__fieldset form-list__fieldset--apps-list fieldset-apps">
-            <legend class="form-list__caption">с каким приложением путешествовали?</legend>
+            <legend class="form-list__caption form-list__caption--apps">с каким приложением путешествовали?</legend>
             <ul class="form-list__ul-list">
               <li class="fieldset-apps__item-radio">
                 <input class="fieldset-apps__field-radio visually-hidden" id="ios" type="radio" name="apps-chose" value="ios" checked>
@@ -129,7 +128,7 @@
           </fieldset>
 
           <fieldset class="form-list__fieldset form-list__fieldset--freeform">
-            <legend class="form-list__caption">опишите свои эмоции</legend>
+            <legend class="form-list__caption form-list__caption--freeform">опишите свои эмоции</legend>
             <textarea class="form-list__textarea" name="freeform-text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="4"></textarea>
           </fieldset>
 
@@ -138,7 +137,7 @@
               <button class="form-list__btn-submit" type="submit">Отправить форму</button>
             </div>
             <div class="form-list__description">
-              <sup class="form-list__description-star">*</sup> &mdash; обязательные поля
+              <sup class="form-list__description-star">*</sup> &mdash; обязательные <span class="form-list__description-star--no-mobile no-mobile">для заполнения</span> поля
             </div>
           </div>
         </form>
@@ -146,7 +145,7 @@
     </div>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-main-action-width">
     <a class="page-footer__logo" href="index.html">
       <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
     </a>
@@ -171,5 +170,17 @@
       </a>
     </div>
   </footer>
+
+  <section class="popup popup--failed">
+    <p class="popup__title">Что-то пошло не так</p>
+    <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="popup__button">ок</button>
+  </section>
+
+  <section class="popup popup--success">
+    <p class="popup__title">Ваша заявка отправлена</p>
+    <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="popup__button">закрыть окно</button>
+  </section>
 </body>
 </html>

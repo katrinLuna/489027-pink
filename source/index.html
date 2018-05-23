@@ -17,14 +17,13 @@
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк"><!--заменить через тег picture по логотипам-->
       </a>
       <button class="page-header__mob-menu-toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-        <span class="visually-hidden">Закрыть меню</span>
+        <span class="visually-hidden">Открыть или закрыть меню</span>
       </button>
     </div>
     <nav class="main-nav">
         <ul class="main-nav__list site-menu-list">
           <li class="site-menu-list__item site-menu-list__item--active">
-            <a class="site-menu-list__link">Главная</a>
+            <a class="site-menu-list__link site-menu-list__link--active">Главная</a>
           </li>
           <li class="site-menu-list__item">
             <a class="site-menu-list__link" href="photo.html">Фотографии</a>
@@ -44,59 +43,67 @@
 
     <section class="download">
       <h2 class="visually-hidden">Приложение Пинк - установите легко в любом магазине.</h2>
-      <div class="download__product-img-wrapper">
-        <img class="download__product-img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Преобразить серые мир в цветные будни">
-      </div>
-      <div class="download__action-block-wrapper">
-        <p class="download__action-block-title no-mobile">Взгляните на жизнь иначе</p>
-        <div class="download__btn-wrapper">
-          <a class="download__btn button--grey" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+      <div class="download__wrapper page-main-action-width">
+        <div class="download__product-img-wrapper">
+          <img class="download__product-img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Преобразить серые мир в цветные будни">
         </div>
-        <ul class="download__list shop-list">
-          <li class="shop-list__item">
-            <a class="shop-list__link" href="https://www.apple.com/ru/ios/app-store/">
-              <span class="visually-hidden">Скачать приложение в магазине App Store</span>
-              <img class="shop-list__img shop-list__img--apple" src="img/logo-apple.svg" width="46" height="56" alt="Скачать приложение в магазине App Store">
-            </a>
-          </li>
-          <li class="shop-list__item">
-            <a class="shop-list__link" href="https://play.google.com/store/apps?hl=ru">
-              <span class="visually-hidden">Скачать приложение в магазине Google Play</span>
-              <img class="shop-list__img shop-list__img--google" src="img/logo-android.svg" width="43" height="41" alt="Скачать приложение в магазине Google Play">
-            </a>
-          </li>
-          <li class="shop-list__item">
-            <a class="shop-list__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
-              <span class="visually-hidden">Скачать приложение в магазине Windows phone store</span>
-              <img class="shop-list__img shop-list__img--win" src="img/logo-microsoft.svg" width="42" height="47" alt="Скачать приложение в магазине Windows phone store">
-            </a>
-          </li>
-        </ul>
-        <p class="download__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <div class="download__action-block-wrapper">
+          <p class="download__action-block-title no-mobile">Взгляните на&nbsp;жизнь иначе!</p>
+          <div class="download__btn-wrapper">
+            <a class="download__btn button--grey" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+          </div>
+          <ul class="download__list shop-list">
+            <li class="shop-list__item">
+              <a class="shop-list__link" href="https://www.apple.com/ru/ios/app-store/">
+                <span class="visually-hidden">Скачать приложение в магазине App Store</span>
+                <img class="shop-list__img shop-list__img--apple" src="img/logo-apple.svg" width="46" height="56" alt="Скачать приложение в магазине App Store">
+              </a>
+            </li>
+            <li class="shop-list__item">
+              <a class="shop-list__link" href="https://play.google.com/store/apps?hl=ru">
+                <span class="visually-hidden">Скачать приложение в магазине Google Play</span>
+                <img class="shop-list__img shop-list__img--google" src="img/logo-android.svg" width="43" height="41" alt="Скачать приложение в магазине Google Play">
+              </a>
+            </li>
+            <li class="shop-list__item">
+              <a class="shop-list__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
+                <span class="visually-hidden">Скачать приложение в магазине Windows phone store</span>
+                <img class="shop-list__img shop-list__img--win" src="img/logo-microsoft.svg" width="42" height="47" alt="Скачать приложение в магазине Windows phone store">
+              </a>
+            </li>
+          </ul>
+          <p class="download__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества и бонусы приложения</h2>
       <p class="advantage__slogan">Устали от серости мегаполиса?</p>
-      <p class="advantage__slogan">Нам есть, что вам предложить!</p>
-      <div class="advantages__grid-wrapper">
-        <ul class="advantage__list"><!--Пока оставлю как есть, опять же посмотрю по ходу стилизации как будет удобнее: оставить элементом самого родительского (advanteges__item) или внутренний ul тоже в блок превратить и li разметить его детишками-->
+      <p class="advantage__slogan advantage__slogan--short">Нам есть, что вам предложить!</p>
+      <div class="advantages__grid-wrapper page-main-action-width">
+        <ul class="advantage__list">
           <li class="advanteges__item">
-            <img class="advantages__img-list no-mobile" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет от приложения Пинк">
+            <div class="advantages__img-list-wrapper no-mobile">
+              <img class="advantages__img-list" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет от приложения Пинк">
+            </div>
             <h3 class="advanteges__title">Поднимает настроение</h3>
-            <p class="advanteges__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+            <p class="advanteges__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advanteges__item">
-            <img class="advantages__img-list no-mobile" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет от приложения Пинк">
+            <div class="advantages__img-list-wrapper no-mobile">
+              <img class="advantages__img-list" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет от приложения Пинк">
+            </div>
             <h3 class="advanteges__title">Меняет мир вокруг</h3>
-            <p class="advanteges__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="advanteges__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
           </li>
           <li class="advanteges__item">
-            <img class="advantages__img-list no-mobile" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет от приложения Пинк">
-            <h3 class="advanteges__title">Заводит новых друзей</h3>
+            <div class="advantages__img-list-wrapper no-mobile">
+              <img class="advantages__img-list" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет от приложения Пинк">
+            </div>
+            <h3 class="advanteges__title">Заводит новых&nbsp;друзей</h3>
             <p class="advanteges__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
@@ -107,20 +114,31 @@
     </section>
 
     <section class="effect no-mobile">
-      <div class="effect__img-wrapper">
-        <img class="effect__img" src="img/timer.svg" width="298" height="345" alt="Положительный эффект от приложения Пинк длится 24 часа">
-      </div>
-      <div class="effect__explanation-wrapper">
-        <p class="effect__title">Эффект на 24 часа</p>
-        <p class="effect__ description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки</p>
-        <a class="effect__link" href="">Узнать больше об исследовании</a>
+      <div class="effect__wrapper page-main-action-width">
+        <div class="effect__timer-wrapper">
+          <div class="effect__timer">
+            <span class="effect__timer-text">24</span>
+          </div>
+        </div>
+        <div class="effect__explanation-wrapper">
+          <p class="effect__title">Эффект <br class="effect__text-transfer"> на 24 часа!</p>
+          <p class="effect__description">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
       </div>
     </section>
 
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы об использовании приложения Пинк</h2>
-      <div class="reviews__wrapper slider-switch">
+      <div class="reviews__wrapper slider-switch page-main-action-width">
         <ul class="reviews__list slider-switch__list">
+          <li class="reviewes__item reviewes__item--active slider-switch__item">
+            <blockquote class="reviews__blockquote">
+              <cite class="reviews__person-name">Николай Петров</cite>
+              <p class="reviews__person-bio no-mobile">25 лет, водитель трамвая</p>
+              <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </blockquote>
+          </li>
           <li class="reviewes__item slider-switch__item">
             <blockquote class="reviews__blockquote">
               <cite class="reviews__person-name">Николай Петров</cite>
@@ -129,23 +147,30 @@
             </blockquote>
           </li>
           <li class="reviewes__item slider-switch__item">
-            <blockquote>
-              <p class="reviews__person-name"></p>
-              <p class="reviews__text"></p>
-            </blockquote>
-          </li>
-          <li class="reviewes__item slider-switch__item">
-            <blockquote>
-              <p class="reviews__person-name"></p>
-              <p class="reviews__text"></p>
+            <blockquote class="reviews__blockquote">
+              <cite class="reviews__person-name">Николай Петров</cite>
+              <p class="reviews__person-bio no-mobile">25 лет, водитель трамвая</p>
+              <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-настоящему взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
             </blockquote>
           </li>
         </ul>
         <p class="reviews__toggles slider-switch__toggles">
-          <button class="slider-switch__toggle slider-switch__toggle--checked" type="button">1</button>
-          <button class="slider-switch__toggle" type="button">2</button>
-          <button class="slider-switch__toggle" type="button">3</button>
+          <button class="slider-switch__toggle slider-switch__toggle--checked" type="button">
+            <span class="visually-hidden">Отзыв 1</span>
+          </button>
+          <button class="slider-switch__toggle" type="button">
+            <span class="visually-hidden">Отзыв 2</span>
+          </button>
+          <button class="slider-switch__toggle" type="button">
+            <span class="visually-hidden">Отзыв 3</span>
+          </button>
         </p>
+        <button class="slider-switch__arrow slider-switch__arrow--previous no-mobile" type="button">
+          <span class="visually-hidden">Предыдущий отзыв</span>
+        </button>
+        <button class="slider-switch__arrow slider-switch__arrow--next no-mobile" type="button">
+          <span class="visually-hidden">Следуюий отзыв</span>
+        </button>
       </div>
     </section>
 
@@ -153,7 +178,7 @@
       <h2 class="visually-hidden">Тарифные планы приложения Пинк</h2>
       <div class="pricing__wrapper slider-movement">
         <table class="pricing__list" cellpadding="0" cellspacing="0">
-          <th class="pricing__title--mock no-mobile">&nbsp;</th>
+          <th class="pricing__title--mock no-mobile"></th>
           <th class="pricing__title">
             <p class="pricing__hit">
               <span class="pricing__hit-text-rotate">хит</span>
@@ -177,7 +202,7 @@
           </th>
           <tr>
             <td class="pricing__included pricing__included--no-mobile">
-                <span class="pricing__included-text pricing__included-text--no-mobile">розовый фильтр</span>
+                <span class="pricing__included-text pricing__included-text--no-mobile">Розовый фильтр</span>
             </td>
             <td class="pricing__included">
               <div class="pricing__included-flex-wrapper">
@@ -200,7 +225,7 @@
           </tr>
           <tr>
             <td class="pricing__included pricing__included--no-mobile">
-                <span class="pricing__included-text pricing__included-text--no-mobile">смайлики</span>
+                <span class="pricing__included-text pricing__included-text--no-mobile">Смайлики</span>
             </td>
             <td class="pricing__included">
               <div class="pricing__included-flex-wrapper">
@@ -222,8 +247,8 @@
             </td>
           </tr>
           <tr>
-             <td class="pricing__included pricing__included--no-mobile">
-                <span class="pricing__included-text pricing__included-text--no-mobile">комментарии</span>
+            <td class="pricing__included pricing__included--no-mobile">
+                <span class="pricing__included-text pricing__included-text--no-mobile">Комментарии</span>
             </td>
             <td class="pricing__included">
               <div class="pricing__included-flex-wrapper">
@@ -247,34 +272,37 @@
         </table><!--или иконки надо кратинками именно вставить?-->
         <p class="pricing__toggles slider-movement__toggles">
           <button class="slider-movement__toggle" type="button">1</button>
-          <button class="slider-movement__toggle" type="button">2</button>
+          <button class="slider-movement__toggle slider-movement__toggle--checked" type="button">2</button>
           <button class="slider-movement__toggle" type="button">3</button>
         </p>
       </div>
     </section>
 
     <section class="contacts">
-      <p class="contacts__header">Остались вопросы? <span class="contacts__header-two-line">Свяжитесь с нами!</span></p>
-      <div class="contacts__item-wrapper">
+      <p class="contacts__header">
+        Остались вопросы?
+        <span class="contacts__header-two-line">Свяжитесь с нами!</span>
+      </p>
+      <div class="contacts__item-wrapper page-main-action-width">
         <p class="contacts__item">
           <span class="contacts__title">Звоните:</span>
           <a class="contacts__detail contacts__detail--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </p>
-        <p class="contacts__item">
+        <p class="contacts__item contacts__item--email">
           <span class="contacts__title">Пишите:</span>
           <a class="contacts__detail contacts__detail--link-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="contacts__item">
+        <p class="contacts__item contacts__item--adress">
           <span class="contacts__title">Приезжайте в гости:</span>
           <span class="contacts__detail">ул. Большая Конюшенная, 19/8</span>
         </p>
       </div>
       <div class="contacts__img-map">
-        <iframe class="contacts__real-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523776097466" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="contacts__real-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523776097466" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </section>
 
-    <footer class="page-footer page-footer--main-page no-mobile">
+    <footer class="page-footer page-footer--main-page page-main-action-width no-mobile">
       <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
       </a>

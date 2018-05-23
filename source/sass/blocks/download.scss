@@ -1,4 +1,5 @@
 .download {
+  width: 100%;
   background-color: $corp-blue;
   padding-bottom: 29px;
 }
@@ -7,6 +8,7 @@
   height: 286px;
   padding-top: 110px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+
   @include solid-bg;
 }
 
@@ -24,6 +26,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   box-sizing: border-box;
+
   @include set-font(18px, 18px);
   color: $white;
   font-weight: $font-bold;
@@ -32,21 +35,21 @@
   border: 3px solid $white;
   border-radius: 30px;
 
-    &:hover,
-    &:focus {
-      color: $corp-pink;
-      background-color: $white;
-    }
+  &:hover,
+  &:focus {
+    color: $corp-pink;
+    background-color: $white;
+  }
 
-    &:active {
-      color: rgba($corp-pink, 0.3);
-    }
+  &:active {
+    color: rgba($corp-pink, 0.3);
+  }
 }
 
 .download__list {
   margin-top: 32px;
   margin-bottom: 21px;
-  padding-left: 0px;
+  padding-left: 0;
   list-style-type: none;
 }
 
@@ -56,34 +59,129 @@
   margin-right: auto;
   margin-bottom: 0;
   margin-top: 0;
+
   @include set-font(14px, 24px);
   color: $white;
   text-align: center;
 }
 
+
 @media (min-width: $tablet-width) {
   .download {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    padding-bottom: 0;
     background-image: url("../img/bg-back-mobile@1x.jpg");
+
     @include solid-bg;
   }
 
+  .download__wrapper {
+    position: relative;
+    min-height: 618px;
+  }
+
   .download__product-img-wrapper {
-    order: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    min-width: 470px;
+    height: 548px;
+    padding-top: 72px;
     background-image: none;
+  }
+
+  .download__product-img {
+    width: 470px;
+    height: 548px;
+  }
+
+  .download__action-block-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    padding-top: 91px;
   }
 
   .download__action-block-title {
     display: block;
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    @include set-font(40px, 48px);
     color: $white;
+    font-weight: $font-light;
     text-align: center;
+  }
+
+  .download__btn-wrapper {
+    text-align: left;
+  }
+
+  .download__btn {
+    width: 300px;
+    margin: 0;
+    padding-bottom: 16px;
+  }
+
+  .download__list {
+    margin-top: 46px;
+    margin-bottom: 33px;
+  }
+
+  .download__description {
+    width: 100%;
+
+    @include set-font(18px, 24px);
+    color: $white;
+    font-weight: $font-light;
   }
 }
 
-@media (min-width: $tablet-width) {
+
+@media (min-width: $desktop-width) {
   .download {
     padding-top: 100px;
+  }
+
+  .download__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 753px;
+  }
+
+  .download__product-img-wrapper {
+    position: static;
+    order: 1;
+    min-width: 550px;
+    height: 649px;
+    padding-top: 105px;
+  }
+
+  .download__product-img {
+    width: 550px;
+    height: 649px;
+  }
+
+  .download__action-block-wrapper {
+    padding-top: 117px;
+  }
+
+  .download__action-block-title {
+    @include set-font(50px, 60px);
+  }
+
+  .download__list {
+    margin-top: 64px;
+    margin-bottom: 54px;
+  }
+
+  .download__btn-wrapper {
+    padding-top: 48px;
+  }
+
+  .download__btn {
+    @include set-font(21px, 21px);
+    font-weight: $font-bold;
   }
 }

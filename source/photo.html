@@ -17,8 +17,7 @@
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк">
       </a>
       <button class="page-header__mob-menu-toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-        <span class="visually-hidden">Закрыть меню</span>
+        <span class="visually-hidden">Открыть или закрыть меню</span>
       </button>
     </div>
     <nav class="main-nav">
@@ -27,7 +26,7 @@
             <a class="site-menu-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-menu-list__item site-menu-list__item--active">
-            <a class="site-menu-list__link">Фотографии</a>
+            <a class="site-menu-list__link site-menu-list__link--active">Фотографии</a>
           </li>
           <li class="site-menu-list__item">
             <a class="site-menu-list__link" href="form.html">Конкурс</a>
@@ -68,79 +67,91 @@
           <a href="img/user-photo-full.jpeg">
             <img class="photo-item__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
           </a>
-          <blockquote class="photo-item__quote">
-            <cite class="photo-item__author">Левон</cite>
-            <date class="photo-item__date">(5 часов назад)</date>
-            <p class="photo-item__text">Вчера он на луну летал, сегодня в руки к нас попал.</p>
-          </blockquote>
-          <p class="photo-item__like">
-            <span class="photo-item__count-like">нравится: 356</span>
-          </p>
+          <div class="photo-item__info-wrapper">
+            <blockquote class="photo-item__quote">
+              <cite class="photo-item__author">Левон</cite>
+              <date class="photo-item__date">(5 часов назад)</date>
+              <p class="photo-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            </blockquote>
+            <p class="photo-item__like">
+              <span class="photo-item__count-like">нравится: 356</span>
+            </p>
+          </div>
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
             <img class="photo-item__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
           </a>
-          <blockquote class="photo-item__quote">
-            <cite class="photo-item__author">Антон</cite>
-            <date class="photo-item__date">(12 часов назад)</date>
-            <p class="photo-item__text">Соседи будут рады!</p>
-          </blockquote>
-          <p class="photo-item__like">
-            <span class="photo-item__count-like">нравится: 666</span>
-          </p>
+          <div class="photo-item__info-wrapper">
+            <blockquote class="photo-item__quote">
+              <cite class="photo-item__author">Антон</cite>
+              <date class="photo-item__date">(12 часов назад)</date>
+              <p class="photo-item__text">Соседи будут рады!</p>
+            </blockquote>
+            <p class="photo-item__like">
+              <span class="photo-item__count-like">нравится: 666</span>
+            </p>
+          </div>
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
             <img class="photo-item__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
           </a>
-          <blockquote class="photo-item__quote">
-            <cite class="photo-item__author">Борис</cite>
-            <date class="photo-item__date">(20 часов назад)</date>
-            <p class="photo-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          </blockquote>
-          <p class="photo-item__like">
-            <span class="photo-item__count-like">нравится: 215</span>
-          </p>
+          <div class="photo-item__info-wrapper">
+            <blockquote class="photo-item__quote">
+              <cite class="photo-item__author">Борис</cite>
+              <date class="photo-item__date">(20 часов назад)</date>
+              <p class="photo-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            </blockquote>
+            <p class="photo-item__like">
+              <span class="photo-item__count-like">нравится: 215</span>
+            </p>
+          </div>
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
             <img class="photo-item__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
           </a>
-          <blockquote class="photo-item__quote">
-            <cite class="photo-item__author">Сергей</cite>
-            <date class="photo-item__date">(25 часов назад)</date>
-            <p class="photo-item__text">Самая кубанская в мире!</p>
-          </blockquote>
-          <p class="photo-item__like">
-            <span class="photo-item__count-like">нравится: 4</span>
-          </p>
+          <div class="photo-item__info-wrapper">
+            <blockquote class="photo-item__quote">
+              <cite class="photo-item__author">Сергей</cite>
+              <date class="photo-item__date">(25 часов назад)</date>
+              <p class="photo-item__text">Самая кубанская в мире!</p>
+            </blockquote>
+            <p class="photo-item__like">
+              <span class="photo-item__count-like">нравится: 4</span>
+            </p>
+          </div>
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
             <img class="photo-item__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
           </a>
-          <blockquote class="photo-item__quote">
-            <cite class="photo-item__author">Максим</cite>
-            <date class="photo-item__date">(40 часов назад)</date>
-            <p class="photo-item__text">Где снег-то?</p>
-          </blockquote>
-          <p class="photo-item__like">
-            <span class="photo-item__count-like">нравится: 150</span>
-          </p>
+          <div class="photo-item__info-wrapper photo-item__info-wrapper--short">
+            <blockquote class="photo-item__quote">
+              <cite class="photo-item__author">Максим</cite>
+              <date class="photo-item__date">(40 часов назад)</date>
+              <p class="photo-item__text">Где снег-то?</p>
+            </blockquote>
+            <p class="photo-item__like">
+              <span class="photo-item__count-like">нравится: 150</span>
+            </p>
+          </div>
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
             <img class="photo-item__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
           </a>
-          <blockquote class="photo-item__quote">
-            <cite class="photo-item__author">Надежда</cite>
-            <date class="photo-item__date">(45 часов назад)</date>
-            <p class="photo-item__text">Всем GM и взаимные лайки!</p>
-          </blockquote>
-          <p class="photo-item__like">
-            <span class="photo-item__count-like">нравится: 2560</span>
-          </p>
+          <div class="photo-item__info-wrapper photo-item__info-wrapper--short">
+            <blockquote class="photo-item__quote">
+              <cite class="photo-item__author">Надежда</cite>
+              <date class="photo-item__date">(45 часов назад)</date>
+              <p class="photo-item__text">Всем GM и взаимные лайки!</p>
+            </blockquote>
+            <p class="photo-item__like">
+              <span class="photo-item__count-like">нравится: 2560</span>
+            </p>
+          </div>
         </li>
       </ul>
     </section>
@@ -156,47 +167,47 @@
           <div class="editing-picture__tools-wrapper">
             <ul class="editing-picture__list-tools">
               <li class="editing-picture__item editing-picture__item--crop">
+                <input class="editing-picture__field-checkbox visually-hidden" id="crop-tool" type="checkbox" name="crop-tool">
                 <label class="editing-picture__title-checkbox" for="crop-tool">
                   <img class="editing-picture__tool-icon" src="img/icon-editor-crop.svg" width="48" height="48" alt="Инструмент обработки фотографии: обрезка заваленного горизонта">
                 </label>
-                <input class="editing-picture__field-checkbox visually-hidden" id="crop-tool" type="checkbox" name="crop-tool">
-                <div class="editing-picture__range-conteiner editing-picture__range-conteiner--no-mobile">
+                <div class="editing-picture__range-container editing-picture__range-container--no-mobile">
                   <div class="editing-picture__range-line">
                     <div class="editing-picture__range-point editing-picture__range-point--crop"></div>
                   </div>
                 </div>
               </li>
               <li class="editing-picture__item editing-picture__item--color">
-                <label class="editing-picture__title-checkbox" for="color-tool">
+                <input class="editing-picture__field-checkbox visually-hidden" id="color-tool" type="checkbox" name="color-tool">
+                <label class="editing-picture__title-checkbox editing-picture__title-checkbox--color" for="color-tool">
                   <img class="editing-picture__tool-icon" src="img/icon-editor-fill.svg" width="48" height="48" alt="Инструмент обработки фотографии: вытянуть цвет">
                 </label>
-                <input class="editing-picture__field-checkbox visually-hidden" id="color-tool" type="checkbox" name="color-tool">
-                <div class="editing-picture__range-conteiner editing-picture__range-conteiner--no-mobile">
+                <div class="editing-picture__range-container editing-picture__range-container--no-mobile">
                   <div class="editing-picture__range-line">
                     <div class="editing-picture__range-point editing-picture__range-point--color"></div>
                   </div>
                 </div>
               </li>
               <li class="editing-picture__item editing-picture__item--light">
-                <label class="editing-picture__title-checkbox" for="light-tool">
-                  <img class="editing-picture__tool-icon" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Инструмент обработки фотографии: яркость">
-                </label>
                 <input class="editing-picture__field-checkbox visually-hidden" id="light-tool" type="checkbox" name="light-tool"><!--оживление интерактивных элементов^ на css привязка инпутов к label и кастомизация с помощью признака checked.-->
-                <div class="editing-picture__range-conteiner editing-picture__range-conteiner--no-mobile">
+                <label class="editing-picture__title-checkbox editing-picture__title-checkbox--light" for="light-tool">
+                  <img class="editing-picture__tool-icon editing-picture__tool-icon--light" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Инструмент обработки фотографии: яркость">
+                </label>
+                <div class="editing-picture__range-container editing-picture__range-container--no-mobile">
                   <div class="editing-picture__range-line">
                     <div class="editing-picture__range-point editing-picture__range-point--light"></div>
                   </div>
                 </div>
               </li>
             </ul>
-            <div class="editing-picture__range-conteiner editing-picture__range-conteiner--mobile-only">
+            <div class="editing-picture__range-container editing-picture__range-container--mobile-only">
               <div class="editing-picture__range-line">
                 <div class="editing-picture__range-point"></div>
               </div>
             </div>
             <div class="editing-picture__btn-wrapper">
-              <button class="editing-picture__btn photo-editor__btn--submit" type="submit">Запостить</button>
-              <button class="editing-picture__btn photo-editor__btn--reset" type="reset">Отмена</button>
+              <button class="editing-picture__btn editing-picture__btn--submit" type="submit">Запостить</button>
+              <button class="editing-picture__btn editing-picture__btn--reset" type="reset">Отмена</button>
             </div>
           </div>
         </div>
@@ -205,7 +216,7 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-main-action-width">
     <a class="page-footer__logo" href="index.html">
       <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
     </a>

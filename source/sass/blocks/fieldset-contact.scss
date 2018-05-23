@@ -3,6 +3,8 @@
   display: block;
   padding-left: 23px;
   padding-bottom: 4px;
+  box-sizing: border-box;
+
   @include set-font (14px, 30px);
   color: $corp-pink;
   text-transform: uppercase;
@@ -13,6 +15,7 @@
   margin-bottom: 18px;
   padding: 15px 23px;
   box-sizing: border-box;
+
   @include set-font (18px, 30px);
   color: $corp-blue;
   border: 2px solid #e5e5e5;
@@ -33,24 +36,52 @@
 }
 
 @media (min-width: $tablet-width) {
+  .fieldset-contact__field {
+    padding: 15px 20px;
+    margin-bottom: 11px;
+  }
+
   .fieldset-contact__group {
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+    }
   }
 
   .fieldset-contact__title-field {
     order: 1;
+    padding-bottom: 27px;
+    padding-left: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
- .fieldset-contact__fields-wrapper {
+  .fieldset-contact__fields-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .fieldset-contact__group {
-    width: 45%;
+    width: 46%;
+  }
+
+  .fieldset-contact__title-field {
+    padding-bottom: 14px;
+    padding-left: 19px;
+  }
+
+  .fieldset-contact__field {
+    padding: 15px 20px;
+    margin-bottom: 9px;
   }
 }

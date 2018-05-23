@@ -1,26 +1,23 @@
 .fieldset-adventure__ul-list {
   margin-top: 39px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-left: 0;
   list-style-type: none;
 }
 
 .fieldset-adventure__item {
   margin-bottom: 42px;
-
-  &--radio {
-    margin-bottom: 35px;
-  }
 }
 
 .fieldset-adventure__title-checkbox {
   display: inline-block;
   vertical-align: middle;
+
   @include set-font (18px, 30px);
   color: $corp-blue;
 
   &::before {
-    content: '';
+    content: "";
     margin-right: 31px;
     display: inline-block;
     vertical-align: middle;
@@ -28,7 +25,7 @@
     height: 40px;
     box-sizing: border-box;
     border: 2px solid #e5e5e5;
-    }
+  }
 
   &:hover::before,
   &:focus::before {
@@ -40,16 +37,52 @@
   }
 }
 
+.fieldset-adventure__title-checkbox-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .fieldset-adventure__field-checkbox:checked + .fieldset-adventure__title-checkbox::before {
   background-color: $white;
-  background-image: url('../img/icon-yes.svg');
+  background-image: url("../img/icon-yes.svg");
+
   @include solid-bg(auto);
 }
+
+
+@media (min-width: $tablet-width) {
+  .fieldset-adventure__title-checkbox {
+    &::before {
+      margin-right: 19px;
+    }
+  }
+
+  .fieldset-adventure__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .fieldset-adventure__ul-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-content: space-between;
+    height: 164px;
+  }
+
+  .fieldset-adventure__item {
+    &--first-col {
+      width: 260px;
+    }
+
+    &--second-col {
+      width: 247px;
+    }
+
+    &--third-col {
+      width: 212px;
+    }
   }
 }

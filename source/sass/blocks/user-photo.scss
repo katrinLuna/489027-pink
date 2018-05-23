@@ -7,6 +7,7 @@
   margin: 0 auto;
   padding-top: 45px;
   padding-bottom: 50px;
+
   @include set-font (14px, 30px);
   color: $corp-blue;
   text-align: center;
@@ -17,13 +18,14 @@
   width: 100%;
 
   &::before {
-    content: 'панорама дня';
+    content: "панорама дня";
     position: absolute;
     top: 0;
     right: 6%;
     width: 140px;
-    height: 31px;
+    height: 30px;
     padding-top: 6px;
+
     @include set-font (12px, 24px);
     color: $white;
     font-weight: $font-bold;
@@ -31,6 +33,10 @@
     background-color: $corp-pink;
     text-align: center;
   }
+}
+
+.user-photo__img-panoramic {
+  display: block;
 }
 
 .user-photo__list {
@@ -46,6 +52,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .user-photo__title {
+    padding-top: 93px;
+    padding-bottom: 76px;
+
+    @include set-font (18px, 30px);
+  }
+
+  .user-photo__img-panoramic-wrapper {
+    min-height: 510px;
+
+    &::before {
+      top: 56px;
+      right: 20px;
+    }
+  }
+
+  .user-photo__img-panoramic {
+    width: 100%;
+    height: 509px;
+  }
+
   .user-photo__list {
     display: flex;
     justify-content: space-between;
@@ -59,5 +86,31 @@
 @media (min-width: $desktop-width) {
   .user-photo__list {
     width: 940px;
+  }
+
+  .user-photo__title {
+    width: 50%;
+    padding-top: 93px;
+    padding-bottom: 88px;
+
+    @include set-font (18px, 30px);
+  }
+
+  .user-photo__img-panoramic-wrapper {
+    min-height: 506px;
+
+    &::before {
+      top: 54px;
+      right: 130px;
+    }
+  }
+
+  .user-photo__img-panoramic {
+    width: 100%;
+    height: 506px;
+  }
+
+  .user-photo__item {
+    margin-bottom: 53px;
   }
 }

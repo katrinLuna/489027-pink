@@ -7,6 +7,7 @@
   margin: 0 auto;
   padding-top: 24px;
   padding-bottom: 44px;
+
   @include set-font (14px,30px);
   color: $corp-blue;
 }
@@ -17,13 +18,30 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo-editor__title {
+    width: 69%;
+    padding-top: 45px;
+    padding-bottom: 69px;
+
+    @include set-font (18px,30px);
+  }
+
   .photo-editor__picture-edit {
     width: 100%;
+    padding-top: 42px;
+    padding-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .photo-editor__picture-edit {
+    padding-bottom: 31px;
     background-color: $white;
+  }
+
+  .photo-editor__title {
+    width: 35%;
+    padding-top: 6px;
+    padding-bottom: 24px;
   }
 }
