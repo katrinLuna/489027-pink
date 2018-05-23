@@ -42,7 +42,7 @@
   color: $corp-pink;
   text-transform: uppercase;
 
-  &--freeform{
+  &--freeform {
     top: 9px;
   }
 
@@ -231,7 +231,7 @@
 
   .form-list__btn-submit {
     width: 300px;
-    padding-bottom: 15px
+    padding-bottom: 15px;
   }
 
   .form-list__description {
@@ -247,16 +247,67 @@
     align-items: flex-start;
   }
 
+  .form-list__caption {
+    &--apps {
+      left: 28px;
+    }
+
+    &--contact {
+      left: 336px;
+    }
+
+    &--adventure {
+      left: 251px;
+    }
+
+    &--freeform {
+      left: 337px;
+    }
+  }
+
   .form-list__fieldset--person {
-    width: 45%;
+    flex-basis: 46%;
     margin-left: 0;
     margin-right: 0;
+    padding-top: 6px;
   }
 
   .form-list__fieldset--apps-list {
-    width: 45%;
+    flex-basis: 46%;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+    padding-left: 71px;
+    padding-top: 55px;
+  }
+
+  .form-list__fieldset--contact {
+    margin-top: 16px;
+    padding-top: 42px;
+  }
+
+  .form-list__fieldset--adventure-list {
+    padding-bottom: 13px;
+  }
+
+  .form-list__textarea {
+    height: 126px;
+  }
+
+  .form-list__fieldset--freeform {
+    padding-bottom: 40px;
+  }
+
+  .form-list-action__wrapper {
+    padding-top: 22px;
+    padding-bottom: 0;
+  }
+
+  .form-list__button {
+    margin-bottom: 0;
+  }
+
+  .form-list__description-star--no-mobile {
+    display: inline-block;
   }
 }
