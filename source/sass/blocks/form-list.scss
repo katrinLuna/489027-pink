@@ -13,6 +13,10 @@
     background-color: $grey;
   }
 
+  &--contact {
+    padding-top: 31px;
+  }
+
   &--apps-list {
     margin-top: 24px;
     padding-top: 74px;
@@ -24,15 +28,11 @@
     margin-top: 26px;
     padding-top: 28px;
   }
-
-  &--contact {
-    padding-top: 31px;
-  }
 }
 
 .form-list__caption {
   position: absolute;
-  top: -75px;
+  top: 38px;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
@@ -42,15 +42,8 @@
   color: $corp-pink;
   text-transform: uppercase;
 
-  &::before {
-    content: " ";
-    width: 100%;
-    height: 1px;
-    display: block;
-    margin-bottom: 112px;
-  }
   &--freeform{
-    top: -102px;
+    top: 9px;
   }
 
   &--no-mobile {
@@ -132,6 +125,7 @@
   color: $corp-pink;
 }
 
+
 @media (min-width: $tablet-width) {
   .form-list {
     display: flex;
@@ -139,35 +133,92 @@
     justify-content: flex-start;
   }
 
+  .form-list__caption {
+    top: -10px;
+    background-color: $white;
+
+    &--apps {
+      left: 124px;
+      width: 367px;
+    }
+
+    &--contact {
+      left: 176px;
+      width: 263px;
+    }
+
+    &--adventure {
+      left: 93px;
+      width: 433px;
+    }
+
+    &--freeform {
+      left: 180px;
+      width: 260px;
+    }
+  }
+
+  .form-list__ul-list {
+    margin-top: 0;
+  }
+
   .form-list__fieldset {
+    padding-top: 0;
+    padding-right: 58px;
+    padding-bottom: 0;
+    padding-left: 58px;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+  }
+
+  .form-list__fieldset--person {
+    border: none;
     padding: 0;
   }
 
   .form-list__fieldset--adventure-list {
     order: 3;
+    background-color: $white;
+    margin-top: 64px;
+    padding-top: 13px;
+    padding-bottom: 47px;
   }
 
   .form-list__fieldset--contact {
     order: 2;
-    margin-top: -60px;
+    margin-top: 64px;
+    padding-top: 45px;
   }
 
   .form-list__fieldset--apps-list {
     order: 1;
+    margin-top: 15px;
+    padding-top: 53px;
+    padding-bottom: 18px;
+    background-color: $white;
   }
 
   .form-list__fieldset--freeform {
     order: 4;
+    margin-top: 65px;
+    padding-top: 26px;
+    padding-bottom: 47px;
+  }
+
+  .form-list__textarea {
+    height: 195px;
   }
 
   .form-list-action__wrapper {
     order: 5;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 24px;
+    padding-bottom: 15px;
   }
 
   .form-list__caption--no-mobile {
@@ -176,6 +227,11 @@
 
   .form-list__button {
     width: auto;
+  }
+
+  .form-list__btn-submit {
+    width: 300px;
+    padding-bottom: 15px
   }
 
   .form-list__description {
@@ -199,6 +255,7 @@
 
   .form-list__fieldset--apps-list {
     width: 45%;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
   }

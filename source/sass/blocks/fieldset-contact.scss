@@ -3,6 +3,7 @@
   display: block;
   padding-left: 23px;
   padding-bottom: 4px;
+  box-sizing: border-box;
 
   @include set-font (14px, 30px);
   color: $corp-pink;
@@ -35,6 +36,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .fieldset-contact__field {
+    padding: 15px 20px;
+    margin-bottom: 11px;
+  }
+
   .fieldset-contact__group {
     display: flex;
     flex-direction: column;
@@ -42,6 +48,8 @@
 
   .fieldset-contact__title-field {
     order: 1;
+    padding-bottom: 27px;
+    padding-left: 19px;
   }
 }
 

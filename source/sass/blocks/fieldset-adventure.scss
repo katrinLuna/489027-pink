@@ -49,6 +49,20 @@
   @include solid-bg(auto);
 }
 
+
+@media (min-width: $tablet-width) {
+  .fieldset-adventure__title-checkbox {
+    &::before {
+    margin-right: 19px;
+    }
+  }
+
+  .fieldset-adventure__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
 @media (min-width: $desktop-width) {
   .fieldset-adventure__ul-list {
     display: flex;

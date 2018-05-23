@@ -42,3 +42,16 @@
   background-color: $corp-pink;
   border-radius: 50%;
 }
+
+@media (min-width: $tablet-width) {
+  .fieldset-apps__item-radio {
+    margin-bottom: 35px;
+  }
+
+  .fieldset-apps__title-radio {
+    &::before {
+      margin-right: 19px;
+    }
+  }
+}
+
