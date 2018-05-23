@@ -82,6 +82,7 @@
 
   .reviews__text {
     order: -1;
+    width: 620px;
 
     @include set-font(18px, 30px);
   }
@@ -110,5 +111,9 @@
 
   .reviews__person-bio {
     @include set-font(18px, 30px);
+  }
+
+  .reviews__text {
+    width: 700px;
   }
 }

@@ -7,10 +7,6 @@
 
 .fieldset-adventure__item {
   margin-bottom: 42px;
-
-  &--radio {
-    margin-bottom: 35px;
-  }
 }
 
 .fieldset-adventure__title-checkbox {
@@ -39,6 +35,11 @@
   &:active::before {
     border-color: $corp-pink;
   }
+}
+
+.fieldset-adventure__title-checkbox-text {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .fieldset-adventure__field-checkbox:checked + .fieldset-adventure__title-checkbox::before {

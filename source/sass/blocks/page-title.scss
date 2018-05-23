@@ -41,5 +41,9 @@
 
   .page-title__text {
     width: 50%;
+
+    &--wide {
+      width: 70%;
+    }
   }
 }
