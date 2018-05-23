@@ -67,6 +67,22 @@
   .fieldset-adventure__ul-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-content: space-between;
+    height: 164px;
+  }
+
+  .fieldset-adventure__item {
+    &--first-col {
+      width: 260px;
+    }
+
+    &--second-col {
+      width: 247px;
+    }
+
+    &--third-col {
+      width: 212px;
+    }
   }
 }

@@ -61,11 +61,16 @@
   }
 
   .fieldset-contact__group {
-    width: 45%;
+    width: 46%;
   }
 
   .fieldset-contact__title-field {
-    padding-bottom: 12px;
+    padding-bottom: 14px;
     padding-left: 19px;
+  }
+
+  .fieldset-contact__field {
+    padding: 15px 20px;
+    margin-bottom: 9px;
   }
 }
