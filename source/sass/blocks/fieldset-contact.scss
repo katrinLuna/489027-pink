@@ -44,6 +44,17 @@
   .fieldset-contact__group {
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+    }
   }
 
   .fieldset-contact__title-field {

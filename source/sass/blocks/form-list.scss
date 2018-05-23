@@ -207,6 +207,7 @@
 
   .form-list__textarea {
     height: 195px;
+    max-width: 500px;
   }
 
   .form-list-action__wrapper {
@@ -239,6 +240,7 @@
   }
 }
 
+
 @media (min-width: $desktop-width) {
   .form-list {
     flex-direction: row;
@@ -266,14 +268,14 @@
   }
 
   .form-list__fieldset--person {
-    flex-basis: 46%;
+    width: 46%;
     margin-left: 0;
     margin-right: 0;
     padding-top: 6px;
   }
 
   .form-list__fieldset--apps-list {
-    flex-basis: 46%;
+    width: 46%;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -292,6 +294,7 @@
 
   .form-list__textarea {
     height: 126px;
+    max-width: 820px;
   }
 
   .form-list__fieldset--freeform {
