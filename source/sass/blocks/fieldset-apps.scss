@@ -11,7 +11,7 @@
   color: $corp-blue;
 
   &::before {
-    content: " ";
+    content: "";
     margin-right: 31px;
     display: inline-block;
     vertical-align: middle;
@@ -33,7 +33,7 @@
 }
 
 .fieldset-apps__field-radio:checked + .fieldset-apps__title-radio::after {
-  content: " ";
+  content: "";
   position: absolute;
   top: 12px;
   left: 12px;

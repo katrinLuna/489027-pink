@@ -9,33 +9,40 @@
   <meta name="author" content="Ekaterina Nikitina">
   <meta name="description" content="content">
   <meta name="keyword" content="content">
+  <script src="js/picturefill.js"></script>
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo-wrapper">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк">
-      </a>
-      <button class="page-header__mob-menu-toggle" type="button">
-        <span class="visually-hidden">Открыть или закрыть меню</span>
-      </button>
+    <div class="page-header__wrapper">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <picture class="page-header__logo-source">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк">
+          </picture>
+        </a>
+        <button class="page-header__mob-menu-toggle" type="button">
+          <span class="visually-hidden">Открыть или закрыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav">
+          <ul class="main-nav__list site-menu-list">
+            <li class="site-menu-list__item">
+              <a class="site-menu-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-menu-list__item site-menu-list__item--active">
+              <a class="site-menu-list__link site-menu-list__link--active">Фотографии</a>
+            </li>
+            <li class="site-menu-list__item">
+              <a class="site-menu-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-menu-list__item">
+              <a class="site-menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-        <ul class="main-nav__list site-menu-list">
-          <li class="site-menu-list__item">
-            <a class="site-menu-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-menu-list__item site-menu-list__item--active">
-            <a class="site-menu-list__link site-menu-list__link--active">Фотографии</a>
-          </li>
-          <li class="site-menu-list__item">
-            <a class="site-menu-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-menu-list__item">
-            <a class="site-menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-    </nav>
   </header>
 
   <main class="page-main">
@@ -48,7 +55,11 @@
 
       <div class="user-photo__img-panoramic-wrapper">
         <a href="img/user-photo-full.jpeg">
-          <img class="user-photo__img-panoramic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Суперическая фотка от пользователя нашего приложения">
+        <picture class="photo-item__img-source">
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="user-photo__img-panoramic" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Суперическая фотка от пользователя нашего приложения">
+        </picture>
         </a>
       </div>
 
@@ -56,7 +67,7 @@
         <li class="user-photo__item photo-item photo-item--panoramic">
           <blockquote class="photo-item__quote">
             <cite class="photo-item__author">Анна</cite>
-            <date class="photo-item__date">(5 минут назад)</date>
+            <span class="photo-item__date">(5 минут назад)</span>
             <p class="photo-item__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы</p>
           </blockquote>
           <p class="photo-item__like photo-item__like--panoramic">
@@ -65,12 +76,16 @@
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
-            <img class="photo-item__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            <picture class="photo-item__img-source">
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="photo-item__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            </picture>
           </a>
           <div class="photo-item__info-wrapper">
             <blockquote class="photo-item__quote">
               <cite class="photo-item__author">Левон</cite>
-              <date class="photo-item__date">(5 часов назад)</date>
+              <span class="photo-item__date">(5 часов назад)</span>
               <p class="photo-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             </blockquote>
             <p class="photo-item__like">
@@ -80,12 +95,16 @@
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
-            <img class="photo-item__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            <picture class="photo-item__img-source">
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="photo-item__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            </picture>
           </a>
           <div class="photo-item__info-wrapper">
             <blockquote class="photo-item__quote">
               <cite class="photo-item__author">Антон</cite>
-              <date class="photo-item__date">(12 часов назад)</date>
+              <span class="photo-item__date">(12 часов назад)</span>
               <p class="photo-item__text">Соседи будут рады!</p>
             </blockquote>
             <p class="photo-item__like">
@@ -95,12 +114,16 @@
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
-            <img class="photo-item__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            <picture class="photo-item__img-source">
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="photo-item__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            </picture>
           </a>
           <div class="photo-item__info-wrapper">
             <blockquote class="photo-item__quote">
               <cite class="photo-item__author">Борис</cite>
-              <date class="photo-item__date">(20 часов назад)</date>
+              <span class="photo-item__date">(20 часов назад)</span>
               <p class="photo-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             </blockquote>
             <p class="photo-item__like">
@@ -110,12 +133,16 @@
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
-            <img class="photo-item__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            <picture class="photo-item__img-source">
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="photo-item__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            </picture>
           </a>
           <div class="photo-item__info-wrapper">
             <blockquote class="photo-item__quote">
               <cite class="photo-item__author">Сергей</cite>
-              <date class="photo-item__date">(25 часов назад)</date>
+              <span class="photo-item__date">(25 часов назад)</span>
               <p class="photo-item__text">Самая кубанская в мире!</p>
             </blockquote>
             <p class="photo-item__like">
@@ -125,12 +152,16 @@
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
-            <img class="photo-item__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            <picture class="photo-item__img-source">
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="photo-item__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            </picture>
           </a>
           <div class="photo-item__info-wrapper photo-item__info-wrapper--short">
             <blockquote class="photo-item__quote">
               <cite class="photo-item__author">Максим</cite>
-              <date class="photo-item__date">(40 часов назад)</date>
+              <span class="photo-item__date">(40 часов назад)</span>
               <p class="photo-item__text">Где снег-то?</p>
             </blockquote>
             <p class="photo-item__like">
@@ -140,12 +171,16 @@
         </li>
         <li class="user-photo__item photo-item">
           <a href="img/user-photo-full.jpeg">
-            <img class="photo-item__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            <picture class="photo-item__img-source">
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="photo-item__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Суперическая фотка от пользователя нашего приложения">
+            </picture>
           </a>
           <div class="photo-item__info-wrapper photo-item__info-wrapper--short">
             <blockquote class="photo-item__quote">
               <cite class="photo-item__author">Надежда</cite>
-              <date class="photo-item__date">(45 часов назад)</date>
+              <span class="photo-item__date">(45 часов назад)</span>
               <p class="photo-item__text">Всем GM и взаимные лайки!</p>
             </blockquote>
             <p class="photo-item__like">
@@ -161,9 +196,11 @@
 
       <form class="photo-editor__picture-edit editing-picture" action="https://echo.htmlacademy.ru" method="get">
         <div class="editing-picture__wrapper">
-          <div class="editing-picture__img-wrapper">
-            <img class="editing-picture__img" src="img/photo-road-mobile@1x.jpg" width="" height="" alt="Запилите свой бомбический фотошодевр!">
-          </div>
+          <picture class="editing-picture__img-wrapper">
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="editing-picture__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Запилите свой бомбический фотошодевр!">
+          </picture>
           <div class="editing-picture__tools-wrapper">
             <ul class="editing-picture__list-tools">
               <li class="editing-picture__item editing-picture__item--crop">
@@ -218,7 +255,10 @@
 
   <footer class="page-footer page-main-action-width">
     <a class="page-footer__logo" href="index.html">
-      <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
+      </picture>
     </a>
     <div class="page-footer__social">
       <ul class="page-footer__social-list">

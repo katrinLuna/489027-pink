@@ -13,7 +13,12 @@
   padding-right: 20px;
 }
 
+.page-header__logo-source {
+  display: block;
+}
+
 .page-header__mob-menu-toggle {
+  display: none;
   width: 25px;
   height: 25px;
   background-color: $corp-blue;
@@ -30,7 +35,13 @@
   }
 
   .page-header__logo-wrapper {
+    align-items: flex-start;
     min-height: 60px;
+  }
+
+  .page-header__logo-image {
+    width: 147px;
+    height: 41px;
   }
 }
 
@@ -44,12 +55,19 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 25px 130px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     box-sizing: border-box;
     background-color: rgba(#616c77, 0.3);
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .page-header__logo-wrapper {

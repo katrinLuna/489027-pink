@@ -15,6 +15,15 @@
   &:not(:last-child) {
     margin-right: 19px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($corp-blue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($corp-blue, 0.1);
+  }
 }
 
 .slider-movement__toggle--checked {

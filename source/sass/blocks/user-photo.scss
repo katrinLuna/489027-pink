@@ -15,6 +15,7 @@
 
 .user-photo__img-panoramic-wrapper {
   position: relative;
+  display: block;
   width: 100%;
 
   &::before {
@@ -111,6 +112,6 @@
   }
 
   .user-photo__item {
-    margin-bottom: 53px;
+    margin-bottom: 54px;
   }
 }

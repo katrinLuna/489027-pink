@@ -5,7 +5,7 @@
 .photo-editor__title {
   width: 280px;
   margin: 0 auto;
-  padding-top: 24px;
+  padding-top: 19px;
   padding-bottom: 44px;
 
   @include set-font (14px,30px);
@@ -20,7 +20,7 @@
 @media (min-width: $tablet-width) {
   .photo-editor__title {
     width: 69%;
-    padding-top: 45px;
+    padding-top: 49px;
     padding-bottom: 69px;
 
     @include set-font (18px,30px);
@@ -41,7 +41,7 @@
 
   .photo-editor__title {
     width: 35%;
-    padding-top: 6px;
+    padding-top: 9px;
     padding-bottom: 24px;
   }
 }

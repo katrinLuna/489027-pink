@@ -40,6 +40,10 @@
   border: 2px solid $corp-pink;
   border-radius: 50%;
   cursor: pointer;
+
+  &:active {
+    background-color: $corp-pink;
+  }
 }
 
 .editing-picture__range-container--no-mobile {
@@ -116,6 +120,7 @@
   }
 
   .editing-picture__img-wrapper {
+    display: block;
     width: 300px;
     height: 400px;
     padding-top: 15px;
