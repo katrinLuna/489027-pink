@@ -75,8 +75,8 @@
   .download {
     padding-bottom: 0;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-
-    @include solid-bg;
+    background-size: 1200px 732px;
+    background-position: center -112px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -86,6 +86,7 @@
   .download__wrapper {
     position: relative;
     min-height: 618px;
+    overflow: hidden;
   }
 
   .download__product-img-wrapper {
@@ -151,8 +152,8 @@
   .download {
     padding-top: 100px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-
-    @include solid-bg;
+    background-size: 2560px 850px;
+    background-position: center 22px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
