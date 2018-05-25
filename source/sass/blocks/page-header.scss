@@ -30,15 +30,12 @@
 
 
 @media (min-width: $tablet-width) {
-  .page-header__logo-wrapper {
-    align-items: flex-start;
-  }
-
   .page-header {
     padding-top: 27px;
   }
 
   .page-header__logo-wrapper {
+    align-items: flex-start;
     min-height: 60px;
   }
 

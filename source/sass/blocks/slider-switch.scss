@@ -16,6 +16,15 @@
   &:not(:last-child) {
     margin-right: 19px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($corp-blue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($corp-blue, 0.1);
+  }
 }
 
 .slider-switch__toggle--checked {
@@ -42,6 +51,7 @@
     padding: 0;
     border: none;
     background-color: $white;
+    opacity: 0.3;
 
     &--previous {
       left: 0;
@@ -55,6 +65,15 @@
       background-image: url("../img/icon-review-arrow-right.svg");
 
       @include solid-bg;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 }
