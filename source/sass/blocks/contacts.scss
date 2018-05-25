@@ -89,6 +89,11 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
   }
+
+  .contacts__real-map {
+    width: 100%;
+    border: 0;
+  }
 }
 
 
