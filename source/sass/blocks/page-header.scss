@@ -44,12 +44,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 25px 130px;
     box-sizing: border-box;
     background-color: rgba(#616c77, 0.3);
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .page-header__logo-wrapper {

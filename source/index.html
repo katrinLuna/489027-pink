@@ -12,30 +12,32 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo-wrapper">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк"><!--заменить через тег picture по логотипам-->
-      </a>
-      <button class="page-header__mob-menu-toggle" type="button">
-        <span class="visually-hidden">Открыть или закрыть меню</span>
-      </button>
+    <div class="page-header__wrapper">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк"><!--заменить через тег picture по логотипам-->
+        </a>
+        <button class="page-header__mob-menu-toggle" type="button">
+          <span class="visually-hidden">Открыть или закрыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav">
+          <ul class="main-nav__list site-menu-list">
+            <li class="site-menu-list__item site-menu-list__item--active">
+              <a class="site-menu-list__link site-menu-list__link--active">Главная</a>
+            </li>
+            <li class="site-menu-list__item">
+              <a class="site-menu-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-menu-list__item">
+              <a class="site-menu-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-menu-list__item">
+              <a class="site-menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-        <ul class="main-nav__list site-menu-list">
-          <li class="site-menu-list__item site-menu-list__item--active">
-            <a class="site-menu-list__link site-menu-list__link--active">Главная</a>
-          </li>
-          <li class="site-menu-list__item">
-            <a class="site-menu-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-menu-list__item">
-            <a class="site-menu-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-menu-list__item">
-            <a class="site-menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-    </nav>
   </header>
 
   <main class="page-main">
@@ -44,9 +46,11 @@
     <section class="download">
       <h2 class="visually-hidden">Приложение Пинк - установите легко в любом магазине.</h2>
       <div class="download__wrapper page-main-action-width">
-        <div class="download__product-img-wrapper">
-          <img class="download__product-img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Преобразить серые мир в цветные будни">
-        </div>
+        <picture class="download__product-img-wrapper">
+          <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+          <img class="download__product-img" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Преобразить серые мир в цветные будни">
+        </picture>
         <div class="download__action-block-wrapper">
           <p class="download__action-block-title no-mobile">Взгляните на&nbsp;жизнь иначе!</p>
           <div class="download__btn-wrapper">
@@ -86,30 +90,31 @@
       <div class="advantages__grid-wrapper page-main-action-width">
         <ul class="advantage__list">
           <li class="advanteges__item">
-            <div class="advantages__img-list-wrapper no-mobile">
-              <img class="advantages__img-list" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет от приложения Пинк">
-            </div>
+            <picture class="advantages__img-list-wrapper no-mobile">
+                <img class="advantages__img-list" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" alt="Привет от приложения Пинк">
+            </picture>
             <h3 class="advanteges__title">Поднимает настроение</h3>
             <p class="advanteges__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advanteges__item">
-            <div class="advantages__img-list-wrapper no-mobile">
-              <img class="advantages__img-list" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет от приложения Пинк">
-            </div>
+            <picture class="advantages__img-list-wrapper no-mobile">
+                <img class="advantages__img-list" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="Привет от приложения Пинк">
+            </picture>
             <h3 class="advanteges__title">Меняет мир вокруг</h3>
             <p class="advanteges__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
           </li>
           <li class="advanteges__item">
-            <div class="advantages__img-list-wrapper no-mobile">
-              <img class="advantages__img-list" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет от приложения Пинк">
-            </div>
+            <picture class="advantages__img-list-wrapper no-mobile">
+                <img class="advantages__img-list" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" alt="Привет от приложения Пинк">
+            </picture>
             <h3 class="advanteges__title">Заводит новых&nbsp;друзей</h3>
             <p class="advanteges__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="advantages__img-wrapper">
-          <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Привет от приложения Пинк">
-        </div>
+        <picture class="advantages__img-wrapper">
+          <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+          <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="Привет от приложения Пинк">
+        </picture>
       </div>
     </section>
 
