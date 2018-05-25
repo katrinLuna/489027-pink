@@ -47,6 +47,7 @@
 }
 
 .advantages__img-wrapper {
+  display: block;
   max-height: 275px;
   text-align: center;
   overflow: hidden;
@@ -95,13 +96,13 @@
 
   .advantages__img-wrapper {
     width: 268px;
-    height: 481px;
+    height: 483px;
     max-height: 483px;
   }
 
   .advantages__img {
     width: 268px;
-    height: 481px;
+    height: 483px;
   }
 }
 
