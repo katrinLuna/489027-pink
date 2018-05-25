@@ -15,7 +15,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк">
+          <picture class="page-header__logo-source">
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк">
+          </picture>
         </a>
         <button class="page-header__mob-menu-toggle" type="button">
           <span class="visually-hidden">Открыть или закрыть меню</span>
@@ -149,7 +153,10 @@
 
   <footer class="page-footer page-main-action-width">
     <a class="page-footer__logo" href="index.html">
-      <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Пинк">
+      </picture>
     </a>
     <div class="page-footer__social">
       <ul class="page-footer__social-list">
