@@ -98,11 +98,19 @@
   }
 
   .photo-item__quote {
+    flex-grow: 1;
+    display: block;
     width: 100%;
+    min-height: 93px;
+    margin-bottom: auto;
     padding-top: 21px;
     padding-left: 27px;
     padding-right: 27px;
     box-sizing: border-box;
+
+    &--panoramic {
+      min-height: 30px;
+    }
   }
 
   .photo-item__like {
@@ -118,7 +126,7 @@
 
     &::before {
       order: 1;
-      margin-right: 4px;
+      margin-right: 6px;
     }
   }
 

@@ -11,18 +11,17 @@
   transform: translateX(-254px);
 }
 
-.pricing__title,
-.pricing__included {
-  position: relative;
+.pricing__title {
   width: 276px;
   border: 1px solid #e5e5e5;
-}
-
-.pricing__title {
   padding-bottom: 21px;
   background-color: $corp-blue;
   color: $white;
   text-align: center;
+
+  &--hit {
+    position: relative;
+  }
 }
 
 .pricing__hit {
@@ -67,7 +66,9 @@
 }
 
 .pricing__included {
+  width: 276px;
   padding: 15px 18px 14px 20px;
+  border: 1px solid #e5e5e5;
   background-color: $white;
 }
 
