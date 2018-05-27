@@ -12,15 +12,17 @@
 }
 
 .pricing__title {
-  position: relative;
   width: 276px;
   border: 1px solid #e5e5e5;
   padding-bottom: 21px;
   background-color: $corp-blue;
   color: $white;
   text-align: center;
-}
 
+  &--hit {
+  position: relative;
+  }
+}
 
 .pricing__hit {
   display: none;
