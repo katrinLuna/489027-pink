@@ -5,6 +5,11 @@
 
 //common styles
 @import "common";
+
+body {
+  font-family: $font;
+}
+
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/site-menu-list";
