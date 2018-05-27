@@ -11,9 +11,12 @@
   transform: translateX(-254px);
 }
 
+.pricing__title {
+  position: relative;
+}
+
 .pricing__title,
 .pricing__included {
-  position: relative;
   width: 276px;
   border: 1px solid #e5e5e5;
 }
