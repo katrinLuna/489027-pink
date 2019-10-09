@@ -46,6 +46,6 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.11"
+    "node": "8.10.x"
   }
 }
